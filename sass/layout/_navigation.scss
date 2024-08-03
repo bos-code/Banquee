@@ -1,0 +1,38 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;align-items: center;
+    padding: 2.4rem 0;
+    @include padCenter;
+    position: relative;
+  &__logo {
+    color: $accent-color;
+    font-family: "DM Sans", serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.03em;
+    text-align: left;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    @include absCenter;
+    &--item {
+      padding: 0.8rem;
+      font-family: "Inter", serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 27.2px;
+    }
+  }
+
+  &__sign{
+    &--actions{
+        display: flex;
+        align-items: center;
+        gap: 3.2rem;
+       
+    }
+  }
+}
