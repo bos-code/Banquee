@@ -1,0 +1,31 @@
+.btn {
+  color: $accent-color;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+}
+
+.btn-2 {
+  padding: 1.2rem 1.6rem;
+  border-radius: 6px;
+  font-size: 1.8rem;
+  color: $default-background-color;
+  background-color: $accent-color;
+}
+.btn-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 1.2rem 0.8rem 1.2rem;
+}
+.navigation__nav--item:link,
+.navigation__nav--item:visited {
+  display: inline-block;
+  transition: all 500ms ease;
+}
+.navigation__nav--item:hover,
+.navigation__nav--item:active {
+    background-color: $light-shade;
+    border-radius: 6px;
+}

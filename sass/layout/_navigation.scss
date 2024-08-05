@@ -11,12 +11,12 @@
     font-weight: 700;
     line-height: 32px;
     letter-spacing: -0.03em;
-    text-align: left;
   }
 
   &__nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     @include absCenter;
     &--item {
       padding: 0.8rem;
@@ -29,10 +29,12 @@
 
   &__sign{
     &--actions{
+        font-family:'DM Sans', serif;
         display: flex;
         align-items: center;
         gap: 3.2rem;
        
     }
+
   }
 }
