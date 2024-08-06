@@ -34,3 +34,80 @@
     }
   }
 }
+
+.transaction {
+  padding: 0 24rem;
+  display: flex;
+
+  background-color: $light-shade;
+  &__textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1.2;
+    margin: 12.8rem 0;
+    p {
+      margin-top: 1.6rem;
+    }
+  }
+  .trans {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 3.2rem 0 0;
+  }
+  &_list {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.6rem;
+    span.transaction-text {
+      font-family: $secondary-font;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 1.3;
+    }
+  }
+  &__main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 0.8;
+    margin-top: 8.6rem;
+    display: flex;
+    gap: 1.6rem;
+    height: 63.6rem;
+    overflow-y: scroll;
+   
+    &--box {
+      display: flex;
+      align-items: center;
+      padding: 1.6rem 2.4rem;
+      background-color: $default-background-color;
+      border-radius: 1rem;
+      width: 100%;
+      
+    //   justify-content: space-between;
+      figure {
+        flex: 0.5;
+      }
+      .text-descript {
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.6rem;
+
+        .transact-head {
+          display: block;
+        }
+        .transact-descript {
+          display: block;
+        }
+      }
+      .price {
+        flex: 0.5;
+        margin-left: 1.6rem;
+      }
+    }
+  }
+}

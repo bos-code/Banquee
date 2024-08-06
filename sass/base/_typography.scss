@@ -36,6 +36,15 @@ line-height: 1;
 letter-spacing: -0.03em;
 
 }
+.heading-tertiary {
+font-family: $primary-font;
+font-size: 6.4rem;
+font-weight: 500;
+line-height: 1;
+letter-spacing: -0.03em;
+
+
+}
 
 .intro {
   font-family: DM Sans;
@@ -69,4 +78,29 @@ font-weight: 500;
 line-height: 1.2;
 letter-spacing: -0.03em;
 color: $accent-text-color;
+}
+.description{
+font-family: $secondary-font;
+font-size: 2rem;
+font-weight: 500;
+line-height: 1.3;
+color: $default-color;
+}
+.price-figure,
+.transact-head{
+  //styleName: heading/h6;
+font-family: $primary-font;
+font-size: 1.8rem;
+font-weight: 500;
+line-height: 1.3;
+letter-spacing: -0.03em;
+}
+
+.transact-descript{
+font-family: $secondary-font;
+font-size: 1.6rem;
+font-weight: 500;
+line-height: 1.3;
+color: $accent-text-color-fade;
+
 }
