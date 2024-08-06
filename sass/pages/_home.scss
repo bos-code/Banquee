@@ -1,0 +1,36 @@
+.features {
+  padding: 16rem 24rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: start;
+  align-items: start;
+
+  &__textbox {
+    flex: 1;
+    .grid-4 {
+      margin-top: 6.4rem;
+
+      .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 3.2rem;
+        border: 2px solid $border-color;
+        border-radius: 1.6rem;
+        width: 28.4rem;
+        gap: 1.6rem;
+      }
+    }
+  }
+
+  &__imagebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 60%;
+    }
+  }
+}

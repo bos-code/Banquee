@@ -27,6 +27,15 @@ html {
   line-height: 1;
   letter-spacing: -0.03em;
 }
+.heading-secondary {
+//styleName: heading/h1;
+font-family: $primary-font;
+font-size: 8rem;
+font-weight: 500;
+line-height: 1;
+letter-spacing: -0.03em;
+
+}
 
 .intro {
   font-family: DM Sans;
@@ -43,4 +52,21 @@ font-size: 2.2rem;
 font-weight: 500;
 line-height: 1.4;
 
+}
+
+.box-header{
+  font-family: $primary-font;
+font-size: 2rem;
+font-weight: 500;
+line-height: 1.2;
+letter-spacing: -0.03em;
+color: $accent-text-color;
+}
+.box-description{
+  font-family: $primary-font;
+font-size: 1.6rem;
+font-weight: 500;
+line-height: 1.2;
+letter-spacing: -0.03em;
+color: $accent-text-color;
 }
