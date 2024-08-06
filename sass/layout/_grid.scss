@@ -5,3 +5,16 @@
     align-content: center;
     justify-content: center;
 }            
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16.4rem;
+    align-content: center;
+    justify-content: center;
+}            
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    justify-content: center;
+}            

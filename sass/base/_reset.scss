@@ -11,8 +11,8 @@ body {
 }
 
 h1,h2,h3{
-    font-family: "DM Sans", "inter";
-}
+    font-family: $primary-font;
+}     
 
 a {
   text-decoration: none;
@@ -21,4 +21,8 @@ a {
 
 li{
     list-style: none;
+}
+button{
+  border: none;
+  background-color: transparent;
 }

@@ -1,41 +1,45 @@
-header {
-  background-color: $primary-light;
-  padding: 12.8rem 14rem;
-  overflow: hidden;
+.home-header {
+  padding: 12.8rem 24rem;
+  &__textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    p {
+      margin-top: 1.6rem;
+    }
+    .check-list {
+      column-gap: 8rem;
+      row-gap: 1.6rem;
+      margin-top: 3.2rem;
+      .list {
+        svg {
+          background-color: $primary-light;
+          height: 2.6rem;
+          width: 2.6rem;
+          border-radius: 50%;
+        }
+        span {
+          //styleName: text/medium;
+          font-family: Inter;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 32.4px;
+        }
+      }
+    }
+    .button {
+      margin-top: 6.4rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 3.2rem;
+    }
+  }
 
-  //   align-items: center;
-
-  // .texkbox{
-  // }
-  .imagebox {
-    align-self: center;
-    @include padCenter;
-    position: relative;
+  &__image {
     display: flex;
     justify-content: center;
-    right: 50%;
-    transform: translateX(60%);
-    align-items: start;
-    
-
-    img {
-      width: 100%;
-      position: absolute;
-      transform: rotate(90deg);
-    }
-    .rotate-left {
-      margin-top: 5rem;
-      transform: rotate(100deg);
-      margin-right: -12rem;
-    }
-    .top {
-        z-index: 1;
-    }
-    .rotate-right {
-        margin-right: 12rem;
-      margin-top: 5rem;
-      transform: translate(-100px);
-      transform: rotate(434deg);
-    }
+    align-items: center;
   }
 }

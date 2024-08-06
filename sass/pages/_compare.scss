@@ -1,0 +1,41 @@
+header {
+    background-color: $primary-light;
+    padding: 12.8rem 14rem;
+    overflow: hidden;
+  
+    //   align-items: center;
+  
+    // .texkbox{
+    // }
+    .imagebox {
+      align-self: center;
+      @include padCenter;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      right: 50%;
+      transform: translateX(60%);
+      align-items: start;
+      
+  
+      img {
+        width: 100%;
+        position: absolute;
+        transform: rotate(90deg);
+      }
+      .rotate-left {
+        margin-top: 5rem;
+        transform: rotate(100deg);
+        margin-right: -12rem;
+      }
+      .top {
+          z-index: 1;
+      }
+      .rotate-right {
+          margin-right: 12rem;
+        margin-top: 5rem;
+        transform: translate(-100px);
+        transform: rotate(43deg);
+      }
+    }
+  }
