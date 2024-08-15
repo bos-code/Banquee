@@ -36,8 +36,26 @@
 }
 
 .transaction {
+  height: 80vh;
   padding: 0 24rem;
   display: flex;
+  overflow: hidden;
+  margin-bottom: 20rem;
+  // ::-webkit-scrollbar-track{
+  //   display: none;background-color: transparent;
+  // }
+  ::-webkit-scrollbar{
+    background-color: transparent;
+  
+  }
+  // ::-webkit-scrollbar-button{
+  //   background-color: transparent;
+  //   display: none;
+
+  // }
+  :focus{
+    display: none;
+  }
 
   background-color: $light-shade;
   &__textbox {
