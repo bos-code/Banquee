@@ -1,562 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Banquee. saas | Bank Website</title>
-    <link
-      rel="shortcut icon"
-      href="/assests/img/favicon.png"
-      type="image/x-icon"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/css/main.css" />
-    <script src="/js/main.js" defer></script>
-  </head>
-  <body>
-    <span class="loader"></span>
-    <nav id="navBar" class="navigation">
-      <a href="/" class="navigation__logo">
-        <span id="logo">banquee.</span>
-      </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banquee. saas | Bank Website</title>
+  <link rel="shortcut icon" href="/assests/img/favicon.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-      <ul class="navigation__nav">
-        <li class="navigation__nav--item">
-          <a href="#">Features</a>
-        </li>
-        <li class="navigation__nav--item btn-1">
-          <a href="#"> Compare</a>
-          <svg
-            id="compareDropdown"
-            width="25"
-            height="25"
-            viewBox="0 0 25 25"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <script src="/js/main.js" defer></script>
+</head>
+
+<body>
+  <span class="loader"></span>
+  <nav id="navBar" class="navigation">
+    <a href="/" class="navigation__logo">
+      <span id="logo">banquee.</span>
+    </a>
+
+    <ul class="navigation__nav">
+      <li class="navigation__nav--item">
+        <a href="#">Features</a>
+      </li>
+      <li class="navigation__nav--item btn-1">
+        <a href="#"> Compare</a>
+        <svg id="compareDropdown" width="25" height="25" viewBox="0 0 25 25" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.4998 15.5L8.25684 11.257L9.67184 9.843L12.4998 12.672L15.3278 9.843L16.7428 11.257L12.4998 15.5Z"
+            fill="#1A191E" />
+        </svg>
+      </li>
+      <li class="navigation__nav--item">
+        <a href="#">Support</a>
+      </li>
+      <li class="navigation__nav--item btn-1">
+        <a href="#">Blog</a>
+        <svg id="blogDropdown" width="25" height="25" viewBox="0 0 25 25" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.4998 15.5L8.25684 11.257L9.67184 9.843L12.4998 12.672L15.3278 9.843L16.7428 11.257L12.4998 15.5Z"
+            fill="#1A191E" />
+        </svg>
+      </li>
+    </ul>
+
+    <ul class="navigation__sign">
+      <li class="navigation__sign--actions">
+        <a href="#" id="navigation__sign--action" ion class="navigation__sign--actions-action btn">Login
+        </a>
+        <a href="#" id="navigation__sign--action" class="navigation__sign--actions-action btn-2">open account
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <header id="homeHeader" class="home-header grid-2">
+    <div class="home-header__textbox">
+      <h1 class="heading-primary">Banking starts here.</h1>
+      <p class="header-description paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore.
+      </p>
+      <ul class="check-list grid-3">
+        <li class="list">
+          <svg id="checkmark" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M12.4998 15.5L8.25684 11.257L9.67184 9.843L12.4998 12.672L15.3278 9.843L16.7428 11.257L12.4998 15.5Z"
-              fill="#1A191E"
-            />
+              d="M7.50005 12.2408L14.3941 5.34604L15.4553 6.40654L7.50005 14.3618L2.72705 9.58879L3.78755 8.52829L7.50005 12.2408Z"
+              fill="#5BB5A2" />
           </svg>
+          <span>Instant Transfer</span>
         </li>
-        <li class="navigation__nav--item">
-          <a href="#">Support</a>
-        </li>
-        <li class="navigation__nav--item btn-1">
-          <a href="#">Blog</a>
-          <svg
-            id="blogDropdown"
-            width="25"
-            height="25"
-            viewBox="0 0 25 25"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+        <li class="list">
+          <svg id="checkmark" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M12.4998 15.5L8.25684 11.257L9.67184 9.843L12.4998 12.672L15.3278 9.843L16.7428 11.257L12.4998 15.5Z"
-              fill="#1A191E"
-            />
+              d="M7.50005 12.2408L14.3941 5.34604L15.4553 6.40654L7.50005 14.3618L2.72705 9.58879L3.78755 8.52829L7.50005 12.2408Z"
+              fill="#5BB5A2" />
           </svg>
+          <span>Instant Transfer</span>
+        </li>
+        <li class="list">
+          <svg id="checkmark" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7.50005 12.2408L14.3941 5.34604L15.4553 6.40654L7.50005 14.3618L2.72705 9.58879L3.78755 8.52829L7.50005 12.2408Z"
+              fill="#5BB5A2" />
+          </svg>
+          <span>Instant Transfer</span>
+        </li>
+        <li class="list">
+          <svg id="checkmark" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7.50005 12.2408L14.3941 5.34604L15.4553 6.40654L7.50005 14.3618L2.72705 9.58879L3.78755 8.52829L7.50005 12.2408Z"
+              fill="#5BB5A2" />
+          </svg>
+          <span>Instant Transfer</span>
         </li>
       </ul>
+      <div class="button">
+        <button class="btn-2">Open Account</button>
+        <button class="btn-default">
+          <span>Compare Cards</span><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.2286 11.8699L10.7921 6.54934L12.2252 5.1468L20.1083 12.8618L12.2252 20.5768L10.7921 19.1742L16.2286 13.8537H3.89209V11.8699H16.2286Z"
+              fill="#5BB5A2" />
+          </svg>
+        </button>
+      </div>
+    </div>
 
-      <ul class="navigation__sign">
-        <li class="navigation__sign--actions">
-          <a
-            href="#"
-            id="navigation__sign--action"
-            ion
-            class="navigation__sign--actions-action btn"
-            >Login
-          </a>
-          <a
-            href="#"
-            id="navigation__sign--action"
-            class="navigation__sign--actions-action btn-2"
-            >open account
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <header id="homeHeader" class="home-header grid-2">
-      <div class="home-header__textbox">
-        <h1 class="heading-primary">Banking starts here.</h1>
-        <p class="header-description paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore.
-        </p>
-        <ul class="check-list grid-3">
-          <li class="list">
-            <svg
-              id="checkmark"
-              width="18"
-              height="19"
-              viewBox="0 0 18 19"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7.50005 12.2408L14.3941 5.34604L15.4553 6.40654L7.50005 14.3618L2.72705 9.58879L3.78755 8.52829L7.50005 12.2408Z"
-                fill="#5BB5A2"
-              />
-            </svg>
-            <span>Instant Transfer</span>
-          </li>
-          <li class="list">
-            <svg
-              id="checkmark"
-              width="18"
-              height="19"
-              viewBox="0 0 18 19"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7.50005 12.2408L14.3941 5.34604L15.4553 6.40654L7.50005 14.3618L2.72705 9.58879L3.78755 8.52829L7.50005 12.2408Z"
-                fill="#5BB5A2"
-              />
-            </svg>
-            <span>Instant Transfer</span>
-          </li>
-          <li class="list">
-            <svg
-              id="checkmark"
-              width="18"
-              height="19"
-              viewBox="0 0 18 19"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7.50005 12.2408L14.3941 5.34604L15.4553 6.40654L7.50005 14.3618L2.72705 9.58879L3.78755 8.52829L7.50005 12.2408Z"
-                fill="#5BB5A2"
-              />
-            </svg>
-            <span>Instant Transfer</span>
-          </li>
-          <li class="list">
-            <svg
-              id="checkmark"
-              width="18"
-              height="19"
-              viewBox="0 0 18 19"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7.50005 12.2408L14.3941 5.34604L15.4553 6.40654L7.50005 14.3618L2.72705 9.58879L3.78755 8.52829L7.50005 12.2408Z"
-                fill="#5BB5A2"
-              />
-            </svg>
-            <span>Instant Transfer</span>
-          </li>
-        </ul>
-        <div class="button">
-          <button class="btn-2">Open Account</button>
-          <button class="btn-default">
-            <span>Compare Cards</span
-            ><svg
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M16.2286 11.8699L10.7921 6.54934L12.2252 5.1468L20.1083 12.8618L12.2252 20.5768L10.7921 19.1742L16.2286 13.8537H3.89209V11.8699H16.2286Z"
-                fill="#5BB5A2"
-              />
-            </svg>
-          </button>
+    <figure class="home-header__image">
+      <img src="/assests/img/cards.png" alt="" />
+    </figure>
+  </header>
+  <section class="features">
+    <div class="features__textbox">
+      <h2 class="heading-secondary">
+        One app. <br />
+        One banking.
+      </h2>
+      <div class="grid-4">
+        <div class="box">
+          <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0.723633" width="50" height="50" rx="25" fill="#E8F2EE" />
+            <path
+              d="M26.1665 22.2236H35.4998L23.8332 39.7236V29.2236H15.6665L26.1665 11.7236V22.2236ZM23.8332 24.557V20.147L19.7872 26.8903H26.1665V32.0166L31.14 24.557H23.8332Z"
+              fill="#5BB5A2" />
+          </svg>
+          <span class="box-header">Instant transactions</span>
+          <span class="box-description">Odio euismod lacinia at quis. Amet purus gravida quis blandit
+            turpis.</span>
+        </div>
+        <div class="box">
+          <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0.723633" width="50" height="50" rx="25" fill="#E8F2EE" />
+            <path
+              d="M22.6668 35.057H18.0002V37.3903H15.6668V35.057H14.5002C14.1907 35.057 13.894 34.9341 13.6752 34.7153C13.4564 34.4965 13.3335 34.1998 13.3335 33.8903V16.3903C13.3335 16.0809 13.4564 15.7842 13.6752 15.5654C13.894 15.3466 14.1907 15.2237 14.5002 15.2237H22.6668V13.5787C22.6669 13.494 22.6853 13.4103 22.721 13.3335C22.7566 13.2567 22.8085 13.1886 22.8731 13.1338C22.9377 13.0791 23.0135 13.0391 23.0951 13.0166C23.1767 12.9941 23.2623 12.9896 23.3458 13.0035L35.6915 15.0615C35.9639 15.1068 36.2114 15.2472 36.39 15.4579C36.5686 15.6685 36.6667 15.9357 36.6668 16.2118V18.7237H37.8335V21.057H36.6668V29.2237H37.8335V31.557H36.6668V34.0688C36.6667 34.345 36.5686 34.6122 36.39 34.8228C36.2114 35.0334 35.9639 35.1739 35.6915 35.2192L34.3335 35.4455V37.3903H32.0002V35.8352L23.3458 37.2772C23.2623 37.2911 23.1767 37.2866 23.0951 37.2641C23.0135 37.2416 22.9377 37.2016 22.8731 37.1468C22.8085 37.0921 22.7566 37.024 22.721 36.9472C22.6853 36.8703 22.6669 36.7867 22.6668 36.702V35.057ZM25.0002 34.637L34.3335 33.0807V17.2L25.0002 15.6448V34.6358V34.637ZM30.2502 28.057C29.2842 28.057 28.5002 26.7503 28.5002 25.1403C28.5002 23.5303 29.2842 22.2237 30.2502 22.2237C31.2162 22.2237 32.0002 23.5303 32.0002 25.1403C32.0002 26.7503 31.2162 28.057 30.2502 28.057Z"
+              fill="#5BB5A2" />
+          </svg>
+
+          <span class="box-header">Saving <br />
+            accounts</span>
+          <span class="box-description">Odio euismod lacinia at quis. Amet purus gravida quis blandit
+            turpis.</span>
+        </div>
+        <div class="box">
+          <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0.723633" width="50" height="50" rx="25" fill="#E8F2EE" />
+            <path
+              d="M19.1668 16.3903V35.057H30.8335V16.3903H19.1668ZM18.0002 14.057H32.0002C32.3096 14.057 32.6063 14.1799 32.8251 14.3987C33.0439 14.6175 33.1668 14.9143 33.1668 15.2237V36.2237C33.1668 36.5331 33.0439 36.8298 32.8251 37.0486C32.6063 37.2674 32.3096 37.3903 32.0002 37.3903H18.0002C17.6907 37.3903 17.394 37.2674 17.1752 37.0486C16.9564 36.8298 16.8335 36.5331 16.8335 36.2237V15.2237C16.8335 14.9143 16.9564 14.6175 17.1752 14.3987C17.394 14.1799 17.6907 14.057 18.0002 14.057ZM25.0002 31.557C25.3096 31.557 25.6063 31.6799 25.8251 31.8987C26.0439 32.1175 26.1668 32.4143 26.1668 32.7237C26.1668 33.0331 26.0439 33.3298 25.8251 33.5486C25.6063 33.7674 25.3096 33.8903 25.0002 33.8903C24.6907 33.8903 24.394 33.7674 24.1752 33.5486C23.9564 33.3298 23.8335 33.0331 23.8335 32.7237C23.8335 32.4143 23.9564 32.1175 24.1752 31.8987C24.394 31.6799 24.6907 31.557 25.0002 31.557Z"
+              fill="#5BB5A2" />
+          </svg>
+
+          <span class="box-header">Mobile <br />
+            banking</span>
+          <span class="box-description">Odio euismod lacinia at quis. Amet purus gravida quis blandit
+            turpis.</span>
+        </div>
+        <div class="box">
+          <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0.723633" width="50" height="50" rx="25" fill="#E8F2EE" />
+            <path
+              d="M16.8333 15.2236V33.8903H35.5V36.2236H14.5V15.2236H16.8333ZM34.6752 19.0655L36.3248 20.7151L29.6667 27.3733L26.1667 23.8745L21.1582 28.8818L19.5085 27.2321L26.1667 20.574L29.6667 24.0728L34.6752 19.0655Z"
+              fill="#5BB5A2" />
+          </svg>
+
+          <span class="box-header">Advanced <br />
+            statistics</span>
+          <span class="box-description">Odio euismod lacinia at quis. Amet purus gravida quis blandit
+            turpis.</span>
+        </div>
+        <div class="box">
+          <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0.723633" width="50" height="50" rx="25" fill="#E8F2EE" />
+            <path
+              d="M14.5002 15.2236H35.5002C35.8096 15.2236 36.1063 15.3465 36.3251 15.5653C36.5439 15.7841 36.6668 16.0809 36.6668 16.3903V35.057C36.6668 35.3664 36.5439 35.6631 36.3251 35.8819C36.1063 36.1007 35.8096 36.2236 35.5002 36.2236H14.5002C14.1907 36.2236 13.894 36.1007 13.6752 35.8819C13.4564 35.6631 13.3335 35.3664 13.3335 35.057V16.3903C13.3335 16.0809 13.4564 15.7841 13.6752 15.5653C13.894 15.3465 14.1907 15.2236 14.5002 15.2236ZM34.3335 25.7236H15.6668V33.8903H34.3335V25.7236ZM34.3335 21.057V17.557H15.6668V21.057H34.3335Z"
+              fill="#5BB5A2" />
+          </svg>
+
+          <span class="box-header">Virtual <br />
+            cards</span>
+          <span class="box-description">Odio euismod lacinia at quis. Amet purus gravida quis blandit
+            turpis.</span>
+        </div>
+        <div class="box">
+          <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0.723633" width="50" height="50" rx="25" fill="#E8F2EE" />
+            <path
+              d="M11.8052 19.8868C15.5374 16.8632 20.1968 15.2165 25.0002 15.2237C29.9993 15.2237 34.5902 16.9702 38.1952 19.8868L36.7298 21.7022C33.4121 19.0142 29.2701 17.5505 25.0002 17.557C20.5563 17.557 16.4765 19.1087 13.2705 21.7022L11.8052 19.8868ZM15.4697 24.4252C18.1654 22.2412 21.5308 21.0518 25.0002 21.057C28.4694 21.0518 31.8346 22.2407 34.5307 24.424L33.0642 26.2393C30.7832 24.3917 27.9356 23.3857 25.0002 23.3903C21.9458 23.3903 19.14 24.4578 16.9362 26.2393L15.4697 24.424V24.4252ZM19.1353 28.9635C20.7942 27.6194 22.8651 26.8873 25.0002 26.8903C27.2215 26.8903 29.262 27.6662 30.865 28.9623L29.3985 30.7777C28.1544 29.7699 26.6012 29.2212 25.0002 29.2237C23.3342 29.2237 21.8035 29.8058 20.6018 30.7777L19.1353 28.9623V28.9635ZM22.801 33.5018C23.4229 32.9975 24.1995 32.7227 25.0002 32.7237C25.8332 32.7237 26.5985 33.0153 27.1993 33.5007L25.0002 36.2237L22.801 33.5007V33.5018Z"
+              fill="#5BB5A2" />
+          </svg>
+
+          <span class="box-header">Contactless <br />
+            payments</span>
+          <span class="box-description">Odio euismod lacinia at quis. Amet purus gravida quis blandit
+            turpis.</span>
         </div>
       </div>
+    </div>
+    <div class="features__imagebox">
+      <img src="/assests/img/app.png" alt="" />
+    </div>
+  </section>
 
-      <figure class="home-header__image">
-        <img src="/assests/img/cards.png" alt="" />
+  <section class="transaction">
+    <div class="transaction__textbox">
+      <h2 class="heading-tertiary">Send & receive <br> money instantly</h2>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do
+        eiusmod tempor incididunt ut labore et.
+      </p>
+      <ul class="trans">
+        <li class="transaction_list">
+          <img src="/assests/svg/checked svg.svg" alt="" />
+          <span class="transaction-text">Malesuada Ipsum</span>
+        </li>
+        <li class="transaction_list">
+          <img src="/assests/svg/checked svg.svg" alt="" />
+          <span class="transaction-text">Vestibulum</span>
+        </li>
+        <li class="transaction_list">
+          <img src="/assests/svg/checked svg.svg" alt="" />
+          <span class="transaction-text">Parturient Lorem</span>
+        </li>
+      </ul>
+    </div>
+    <div class="transaction__main">
+      <div class="transaction__main--box">
+        <figure>
+          <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
+            <path
+              d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
+              fill="white" />
+          </svg>
+        </figure>
+        <div class="text-descript">
+          <span class="transact-head">Apple</span>
+          <span class="transact-descript">Electronic</span>
+        </div>
+        <div class="price"><span class="price-figure">-999€</span></div>
+      </div>
+      <div class="transaction__main--box">
+        <figure>
+          <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
+            <path
+              d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
+              fill="white" />
+          </svg>
+        </figure>
+        <div class="text-descript">
+          <span class="transact-head">Apple</span>
+          <span class="transact-descript">Electronic</span>
+        </div>
+        <div class="price"><span class="price-figure">-999€</span></div>
+      </div>
+      <div class="transaction__main--box">
+        <figure>
+          <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
+            <path
+              d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
+              fill="white" />
+          </svg>
+        </figure>
+        <div class="text-descript">
+          <span class="transact-head">Apple</span>
+          <span class="transact-descript">Electronic</span>
+        </div>
+        <div class="price"><span class="price-figure">-999€</span></div>
+      </div>
+      <div class="transaction__main--box">
+        <figure>
+          <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
+            <path
+              d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
+              fill="white" />
+          </svg>
+        </figure>
+        <div class="text-descript">
+          <span class="transact-head">Apple</span>
+          <span class="transact-descript">Electronic</span>
+        </div>
+        <div class="price"><span class="price-figure">-999€</span></div>
+      </div>
+      <div class="transaction__main--box">
+        <figure>
+          <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
+            <path
+              d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
+              fill="white" />
+          </svg>
+        </figure>
+        <div class="text-descript">
+          <span class="transact-head">Apple</span>
+          <span class="transact-descript">Electronic</span>
+        </div>
+        <div class="price"><span class="price-figure">-999€</span></div>
+      </div>
+      <div class="transaction__main--box">
+        <figure>
+          <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
+            <path
+              d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
+              fill="white" />
+          </svg>
+        </figure>
+        <div class="text-descript">
+          <span class="transact-head">Apple</span>
+          <span class="transact-descript">Electronic</span>
+        </div>
+        <div class="price"><span class="price-figure">-999€</span></div>
+      </div>
+      <div class="transaction__main--box">
+        <figure>
+          <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
+            <path
+              d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
+              fill="white" />
+          </svg>
+        </figure>
+        <div class="text-descript">
+          <span class="transact-head">Apple</span>
+          <span class="transact-descript">Electronic</span>
+        </div>
+        <div class="price"><span class="price-figure">-999€</span></div>
+      </div>
+
+    </div>
+  </section>
+<section class="savings">
+  <div class="savings__textbox">
+    <div class="container"> <span class="section__intro">Saving Accounts</span>
+      <h3 class="section__heading">Organize your money the right way</h3>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do
+        eiusmod tempor incididunt ut labore et.
+      </p>
+    </div>
+    <button class="button">
+      <div class="content">All Features</div>
+      <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.2286 6.73183L7.79209 1.41128L9.2252 0.00873375L17.1083 7.72373L9.2252 15.4387L7.79209 14.0362L13.2286 8.71563H0.89209L0.89209 6.73183H13.2286Z"
+          fill="#5BB5A2" />
+      </svg>
+    </button>
+  </div>
+
+  <div class="features-slides">
+    <div class="feature__box">
+      <figure class="image-container">
+        <img src="" alt="">
       </figure>
-    </header>
-    <section class="features">
-      <div class="features__textbox">
-        <h2 class="heading-secondary">
-          One app. <br />
-          One banking.
-        </h2>
-        <div class="grid-4">
-          <div class="box">
-            <svg
-              width="50"
-              height="51"
-              viewBox="0 0 50 51"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                y="0.723633"
-                width="50"
-                height="50"
-                rx="25"
-                fill="#E8F2EE"
-              />
-              <path
-                d="M26.1665 22.2236H35.4998L23.8332 39.7236V29.2236H15.6665L26.1665 11.7236V22.2236ZM23.8332 24.557V20.147L19.7872 26.8903H26.1665V32.0166L31.14 24.557H23.8332Z"
-                fill="#5BB5A2"
-              />
-            </svg>
-            <span class="box-header">Instant transactions</span>
-            <span class="box-description"
-              >Odio euismod lacinia at quis. Amet purus gravida quis blandit
-              turpis.</span
-            >
-          </div>
-          <div class="box">
-            <svg
-              width="50"
-              height="51"
-              viewBox="0 0 50 51"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                y="0.723633"
-                width="50"
-                height="50"
-                rx="25"
-                fill="#E8F2EE"
-              />
-              <path
-                d="M22.6668 35.057H18.0002V37.3903H15.6668V35.057H14.5002C14.1907 35.057 13.894 34.9341 13.6752 34.7153C13.4564 34.4965 13.3335 34.1998 13.3335 33.8903V16.3903C13.3335 16.0809 13.4564 15.7842 13.6752 15.5654C13.894 15.3466 14.1907 15.2237 14.5002 15.2237H22.6668V13.5787C22.6669 13.494 22.6853 13.4103 22.721 13.3335C22.7566 13.2567 22.8085 13.1886 22.8731 13.1338C22.9377 13.0791 23.0135 13.0391 23.0951 13.0166C23.1767 12.9941 23.2623 12.9896 23.3458 13.0035L35.6915 15.0615C35.9639 15.1068 36.2114 15.2472 36.39 15.4579C36.5686 15.6685 36.6667 15.9357 36.6668 16.2118V18.7237H37.8335V21.057H36.6668V29.2237H37.8335V31.557H36.6668V34.0688C36.6667 34.345 36.5686 34.6122 36.39 34.8228C36.2114 35.0334 35.9639 35.1739 35.6915 35.2192L34.3335 35.4455V37.3903H32.0002V35.8352L23.3458 37.2772C23.2623 37.2911 23.1767 37.2866 23.0951 37.2641C23.0135 37.2416 22.9377 37.2016 22.8731 37.1468C22.8085 37.0921 22.7566 37.024 22.721 36.9472C22.6853 36.8703 22.6669 36.7867 22.6668 36.702V35.057ZM25.0002 34.637L34.3335 33.0807V17.2L25.0002 15.6448V34.6358V34.637ZM30.2502 28.057C29.2842 28.057 28.5002 26.7503 28.5002 25.1403C28.5002 23.5303 29.2842 22.2237 30.2502 22.2237C31.2162 22.2237 32.0002 23.5303 32.0002 25.1403C32.0002 26.7503 31.2162 28.057 30.2502 28.057Z"
-                fill="#5BB5A2"
-              />
-            </svg>
+    </div>
+  </div>
+</section>
+</body>
 
-            <span class="box-header"
-              >Saving <br />
-              accounts</span
-            >
-            <span class="box-description"
-              >Odio euismod lacinia at quis. Amet purus gravida quis blandit
-              turpis.</span
-            >
-          </div>
-          <div class="box">
-            <svg
-              width="50"
-              height="51"
-              viewBox="0 0 50 51"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                y="0.723633"
-                width="50"
-                height="50"
-                rx="25"
-                fill="#E8F2EE"
-              />
-              <path
-                d="M19.1668 16.3903V35.057H30.8335V16.3903H19.1668ZM18.0002 14.057H32.0002C32.3096 14.057 32.6063 14.1799 32.8251 14.3987C33.0439 14.6175 33.1668 14.9143 33.1668 15.2237V36.2237C33.1668 36.5331 33.0439 36.8298 32.8251 37.0486C32.6063 37.2674 32.3096 37.3903 32.0002 37.3903H18.0002C17.6907 37.3903 17.394 37.2674 17.1752 37.0486C16.9564 36.8298 16.8335 36.5331 16.8335 36.2237V15.2237C16.8335 14.9143 16.9564 14.6175 17.1752 14.3987C17.394 14.1799 17.6907 14.057 18.0002 14.057ZM25.0002 31.557C25.3096 31.557 25.6063 31.6799 25.8251 31.8987C26.0439 32.1175 26.1668 32.4143 26.1668 32.7237C26.1668 33.0331 26.0439 33.3298 25.8251 33.5486C25.6063 33.7674 25.3096 33.8903 25.0002 33.8903C24.6907 33.8903 24.394 33.7674 24.1752 33.5486C23.9564 33.3298 23.8335 33.0331 23.8335 32.7237C23.8335 32.4143 23.9564 32.1175 24.1752 31.8987C24.394 31.6799 24.6907 31.557 25.0002 31.557Z"
-                fill="#5BB5A2"
-              />
-            </svg>
-
-            <span class="box-header"
-              >Mobile <br />
-              banking</span
-            >
-            <span class="box-description"
-              >Odio euismod lacinia at quis. Amet purus gravida quis blandit
-              turpis.</span
-            >
-          </div>
-          <div class="box">
-            <svg
-              width="50"
-              height="51"
-              viewBox="0 0 50 51"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                y="0.723633"
-                width="50"
-                height="50"
-                rx="25"
-                fill="#E8F2EE"
-              />
-              <path
-                d="M16.8333 15.2236V33.8903H35.5V36.2236H14.5V15.2236H16.8333ZM34.6752 19.0655L36.3248 20.7151L29.6667 27.3733L26.1667 23.8745L21.1582 28.8818L19.5085 27.2321L26.1667 20.574L29.6667 24.0728L34.6752 19.0655Z"
-                fill="#5BB5A2"
-              />
-            </svg>
-
-            <span class="box-header"
-              >Advanced <br />
-              statistics</span
-            >
-            <span class="box-description"
-              >Odio euismod lacinia at quis. Amet purus gravida quis blandit
-              turpis.</span
-            >
-          </div>
-          <div class="box">
-            <svg
-              width="50"
-              height="51"
-              viewBox="0 0 50 51"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                y="0.723633"
-                width="50"
-                height="50"
-                rx="25"
-                fill="#E8F2EE"
-              />
-              <path
-                d="M14.5002 15.2236H35.5002C35.8096 15.2236 36.1063 15.3465 36.3251 15.5653C36.5439 15.7841 36.6668 16.0809 36.6668 16.3903V35.057C36.6668 35.3664 36.5439 35.6631 36.3251 35.8819C36.1063 36.1007 35.8096 36.2236 35.5002 36.2236H14.5002C14.1907 36.2236 13.894 36.1007 13.6752 35.8819C13.4564 35.6631 13.3335 35.3664 13.3335 35.057V16.3903C13.3335 16.0809 13.4564 15.7841 13.6752 15.5653C13.894 15.3465 14.1907 15.2236 14.5002 15.2236ZM34.3335 25.7236H15.6668V33.8903H34.3335V25.7236ZM34.3335 21.057V17.557H15.6668V21.057H34.3335Z"
-                fill="#5BB5A2"
-              />
-            </svg>
-
-            <span class="box-header"
-              >Virtual <br />
-              cards</span
-            >
-            <span class="box-description"
-              >Odio euismod lacinia at quis. Amet purus gravida quis blandit
-              turpis.</span
-            >
-          </div>
-          <div class="box">
-            <svg
-              width="50"
-              height="51"
-              viewBox="0 0 50 51"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                y="0.723633"
-                width="50"
-                height="50"
-                rx="25"
-                fill="#E8F2EE"
-              />
-              <path
-                d="M11.8052 19.8868C15.5374 16.8632 20.1968 15.2165 25.0002 15.2237C29.9993 15.2237 34.5902 16.9702 38.1952 19.8868L36.7298 21.7022C33.4121 19.0142 29.2701 17.5505 25.0002 17.557C20.5563 17.557 16.4765 19.1087 13.2705 21.7022L11.8052 19.8868ZM15.4697 24.4252C18.1654 22.2412 21.5308 21.0518 25.0002 21.057C28.4694 21.0518 31.8346 22.2407 34.5307 24.424L33.0642 26.2393C30.7832 24.3917 27.9356 23.3857 25.0002 23.3903C21.9458 23.3903 19.14 24.4578 16.9362 26.2393L15.4697 24.424V24.4252ZM19.1353 28.9635C20.7942 27.6194 22.8651 26.8873 25.0002 26.8903C27.2215 26.8903 29.262 27.6662 30.865 28.9623L29.3985 30.7777C28.1544 29.7699 26.6012 29.2212 25.0002 29.2237C23.3342 29.2237 21.8035 29.8058 20.6018 30.7777L19.1353 28.9623V28.9635ZM22.801 33.5018C23.4229 32.9975 24.1995 32.7227 25.0002 32.7237C25.8332 32.7237 26.5985 33.0153 27.1993 33.5007L25.0002 36.2237L22.801 33.5007V33.5018Z"
-                fill="#5BB5A2"
-              />
-            </svg>
-
-            <span class="box-header"
-              >Contactless <br />
-              payments</span
-            >
-            <span class="box-description"
-              >Odio euismod lacinia at quis. Amet purus gravida quis blandit
-              turpis.</span
-            >
-          </div>
-        </div>
-      </div>
-      <div class="features__imagebox">
-        <img src="/assests/img/app.png" alt="" />
-      </div>
-    </section>
-
-    <section class="transaction">
-      <div class="transaction__textbox">
-        <h2 class="heading-tertiary">Send & receive <br> money instantly</h2>
-        <p class="description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do
-          eiusmod tempor incididunt ut labore et.
-        </p>
-        <ul class="trans">
-          <li class="transaction_list">
-            <img src="/assests/svg/checked svg.svg" alt="" />
-            <span class="transaction-text">Malesuada Ipsum</span>
-          </li>
-          <li class="transaction_list">
-            <img src="/assests/svg/checked svg.svg" alt="" />
-            <span class="transaction-text">Vestibulum</span>
-          </li>
-          <li class="transaction_list">
-            <img src="/assests/svg/checked svg.svg" alt="" />
-            <span class="transaction-text">Parturient Lorem</span>
-          </li>
-        </ul>
-      </div>
-      <div class="transaction__main">
-        <div class="transaction__main--box">
-          <figure>
-            <svg
-              width="50"
-              height="51"
-              viewBox="0 0 50 51"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
-              <path
-                d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
-                fill="white"
-              />
-            </svg>
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Apple</span>
-            <span class="transact-descript">Electronic</span>
-          </div>
-          <div class="price"><span class="price-figure">-999€</span></div>
-        </div>
-        <div class="transaction__main--box">
-          <figure>
-            <svg
-              width="50"
-              height="51"
-              viewBox="0 0 50 51"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
-              <path
-                d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
-                fill="white"
-              />
-            </svg>
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Apple</span>
-            <span class="transact-descript">Electronic</span>
-          </div>
-          <div class="price"><span class="price-figure">-999€</span></div>
-        </div>
-        <div class="transaction__main--box">
-          <figure>
-            <svg
-              width="50"
-              height="51"
-              viewBox="0 0 50 51"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
-              <path
-                d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
-                fill="white"
-              />
-            </svg>
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Apple</span>
-            <span class="transact-descript">Electronic</span>
-          </div>
-          <div class="price"><span class="price-figure">-999€</span></div>
-        </div>
-        <div class="transaction__main--box">
-          <figure>
-            <svg
-              width="50"
-              height="51"
-              viewBox="0 0 50 51"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
-              <path
-                d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
-                fill="white"
-              />
-            </svg>
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Apple</span>
-            <span class="transact-descript">Electronic</span>
-          </div>
-          <div class="price"><span class="price-figure">-999€</span></div>
-        </div>
-        <div class="transaction__main--box">
-          <figure>
-            <svg
-              width="50"
-              height="51"
-              viewBox="0 0 50 51"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
-              <path
-                d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
-                fill="white"
-              />
-            </svg>
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Apple</span>
-            <span class="transact-descript">Electronic</span>
-          </div>
-          <div class="price"><span class="price-figure">-999€</span></div>
-        </div>
-        <div class="transaction__main--box">
-          <figure>
-            <svg
-              width="50"
-              height="51"
-              viewBox="0 0 50 51"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
-              <path
-                d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
-                fill="white"
-              />
-            </svg>
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Apple</span>
-            <span class="transact-descript">Electronic</span>
-          </div>
-          <div class="price"><span class="price-figure">-999€</span></div>
-        </div>
-        <div class="transaction__main--box">
-          <figure>
-            <svg
-              width="50"
-              height="51"
-              viewBox="0 0 50 51"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
-              <path
-                d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
-                fill="white"
-              />
-            </svg>
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Apple</span>
-            <span class="transact-descript">Electronic</span>
-          </div>
-          <div class="price"><span class="price-figure">-999€</span></div>
-        </div>
-   
-      </div>
-    </section>
-  </body>
 </html>
