@@ -40,20 +40,18 @@
   padding: 0 24rem;
   display: flex;
   overflow: hidden;
-  margin-bottom: 20rem;
   // ::-webkit-scrollbar-track{
   //   display: none;background-color: transparent;
   // }
-  ::-webkit-scrollbar{
+  ::-webkit-scrollbar {
     background-color: transparent;
-  
   }
   // ::-webkit-scrollbar-button{
   //   background-color: transparent;
   //   display: none;
 
   // }
-  :focus{
+  :focus {
     display: none;
   }
 
@@ -96,7 +94,7 @@
     gap: 1.6rem;
     height: 63.6rem;
     overflow-y: scroll;
-   
+
     &--box {
       display: flex;
       align-items: center;
@@ -104,8 +102,8 @@
       background-color: $default-background-color;
       border-radius: 1rem;
       width: 100%;
-      
-    //   justify-content: space-between;
+
+      //   justify-content: space-between;
       figure {
         flex: 0.5;
       }
@@ -130,7 +128,53 @@
   }
 }
 
-
-.savings{
+.savings {
   padding: 16rem 24rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+  &__textbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      align-self: end;
+      justify-self: end;
+      color: $accent-color;
+    }
+  }
+  .features__slides {
+    display: flex;
+    justify-content: center;
+    gap: 3.3rem;
+  
+    &--box {
+      @include flex-reverse;
+      @include gap;
+     
+      .icon-wrapper {
+        width: 21.4rem;
+        height: 21.4rem;
+        border-radius: 1.6rem;
+        position: relative;
+        // background-color: $frame-color-1;
+    
+        .icon {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
 }

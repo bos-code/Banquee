@@ -5,6 +5,13 @@
     transform: translate(-50%, -50%);
   }
   
+  @mixin gap{
+    gap: 1.6rem;
+  }
+  @mixin flex-reverse{
+    display: flex;
+    flex-direction: column;
+  }
   @mixin padCenter {
     padding-right: 6vw;
     padding-left: 6vw;
