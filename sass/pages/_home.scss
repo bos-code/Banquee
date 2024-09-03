@@ -217,8 +217,8 @@
   button {
     margin-top: 4.8rem;
     display: flex;
-   gap: .8rem;
-   color: $accent-color;
+    gap: 0.8rem;
+    color: $accent-color;
   }
   &__main {
     display: flex;
@@ -253,6 +253,58 @@
         .transact-descript {
           display: block;
         }
+      }
+    }
+  }
+}
+
+.tools {
+  padding: 16rem 24rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 4rem;
+  &--gallery {
+    max-width: 72rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include gap;
+    .tool__wrapper {
+      padding: 1.6rem;
+      background-color: $light-shade;
+      border-radius: 1.6rem;
+    }
+  }
+  &__textbox {
+  display: grid;grid-template-columns: repeat(2, 1fr);
+
+    p {
+      padding-top: 1.6rem;
+    }
+    .main-text {
+      flex: 1;
+    }
+  }
+  .tool {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+    flex: 1;
+    align-self: flex-end;
+    // right: 0;
+    justify-self: center;
+    &_list {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      span.tool-text {
+        font-family: $secondary-font;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.3;
       }
     }
   }
