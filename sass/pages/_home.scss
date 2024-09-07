@@ -278,7 +278,8 @@
     }
   }
   &__textbox {
-  display: grid;grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
     p {
       padding-top: 1.6rem;
@@ -310,44 +311,46 @@
   }
 }
 
-.account{
+.account {
   padding: 16rem 44rem 0;
-  &__content{
- display: grid;grid-template-columns: 1fr;
-    &--textbox{
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    &--textbox {
       @include flex;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 40rem;
-    p{
-margin-top: 1.6rem;
-position: relative;
-     
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 40rem;
+      p {
+        margin-top: 1.6rem;
+        position: relative;
+      }
     }
-    }
-    .cards{
-      .bind--cards{
+    .cards {
+      .bind--cards {
         width: 100%;
         @include flex;
         flex-direction: column;
-        
-        position: relative;
-        
-    
-        img {
-  position: absolute;
-        
-      }
-      .img-2{
-       transform: translateY(-10rem);
-       z-index: -1;
-      }
-      .img-3{
-       transform: translateY(-20rem);
-       z-index: -2;
-      }
 
+        position: relative;
+
+        img {
+          position: absolute;
+        }
+        .img-2 {
+          transform: translateY(-10rem);
+          z-index: -1;
+        }
+        .img-3 {
+          transform: translateY(-20rem);
+          z-index: -2;
+        }
+      }
     }
   }
-}
+  .btns{
+    display: flex;justify-content: center;align-items: center;
+    gap: 1.6rem;
+    margin: 20rem 0 5rem;
+  }
 }
