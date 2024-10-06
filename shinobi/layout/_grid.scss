@@ -25,4 +25,13 @@
     justify-content: center;
     gap: 3.2rem;
     // grid-auto-rows: 34rem;
+    @include sm-desktop{
+        gap: 2rem;
+        
+    }
+    @include tab-port{
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+
+    }
 }            

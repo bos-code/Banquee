@@ -1,24 +1,21 @@
 html {
   font-size: 62.5%; // 1rem = 10px
 
-  @include respond(tab-land) {
+  @include tab-port {
+    // 1rem = 8px, (8/16) * 100
+    font-size: 50%;
+  }
+  @include tab-land {
     // 1rem = 9px, (9/16) * 100
     font-size: 56.25%;
   }
 
-  @include respond(tab-port) {
-    // 1rem = 8px, (8/16) * 100
-    font-size: 50%;
-  }
 
-  @include respond(sm-laptop) {
+  @include sm-desktop{
     // 1rem = 12px, (12/16) * 100
-    font-size: 65%;
+    font-size: 59%;
   }
-  @include respond(big-desktop) {
-    // 1rem = 12px, (12/16) * 100
-    font-size: 75%;
-  }
+  
 }
 .heading-primary {
   font-size: 10rem;
@@ -26,14 +23,21 @@ html {
   // line-height: 88px;
   line-height: 1;
   letter-spacing: -0.03em;
+
+  @include sm-desktop{
+    font-size: 8rem;
+  }
+  @include tab-port{
+    font-size: 6rem;
+  }
+
 }
 .heading-secondary {
-//styleName: heading/h1;
 font-family: $primary-font;
-font-size: 8rem;
 font-weight: 500;
 line-height: 1;
 letter-spacing: -0.03em;
+@include lg-fsz;
 
 }
 .heading-tertiary {
@@ -60,6 +64,9 @@ font-family: $secondary-font;
 font-size: 2.2rem;
 font-weight: 500;
 line-height: 1.4;
+@include sm-desktop{
+  font-size: 1.6rem;
+}
 
 }
 
@@ -70,6 +77,11 @@ font-weight: 500;
 line-height: 1.2;
 letter-spacing: -0.03em;
 color: $accent-text-color;
+@include sm-desktop{
+font-size: 1.8rem;
+line-height: 1.4;
+  
+}
 }
 .box-description{
   font-family: $primary-font;
@@ -78,6 +90,10 @@ font-weight: 500;
 line-height: 1.2;
 letter-spacing: -0.03em;
 color: $accent-text-color;
+@include sm-desktop{
+font-size: 1.4rem;
+  
+}
 }
 .description{
 font-family: $secondary-font;

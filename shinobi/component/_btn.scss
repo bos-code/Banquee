@@ -1,12 +1,13 @@
 .btn {
   color: $accent-color;
-  font-size: 1.8rem;
   font-weight: 500;
   line-height: 18px;
   letter-spacing: -0.03em;
+
+  @include sm-fsz;
 }
 .btn-default{
-    font-size: 1.8rem;
+  @include sm-fsz;
     font-weight: 500;
     line-height: 18px;
     letter-spacing: -0.03em;
@@ -17,7 +18,7 @@
 .btn-2 {
   padding: 1.2rem 1.6rem;
   border-radius: 6px;
-  font-size: 1.8rem;
+  @include sm-fsz;
   color: $default-background-color;
   background-color: $accent-color;
 }

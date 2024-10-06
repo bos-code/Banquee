@@ -1,17 +1,30 @@
 .home-header {
-  padding: 12.8rem 24rem;
+  @include padTop;
+  @include padCenter;
+  
+
   &__textbox {
     display: flex;
     flex-direction: column;
+
     justify-content: center;
-    // align-items: center;
+
     p {
       margin-top: 1.6rem;
+
+     
     }
+
     .check-list {
       column-gap: 8rem;
       row-gap: 1.6rem;
       margin-top: 3.2rem;
+
+      @include sm-desktop {
+        margin-top: 2.5rem;
+        column-gap: 6rem;
+      }
+
       .list {
         svg {
           background-color: $primary-light;
@@ -19,21 +32,31 @@
           width: 2.6rem;
           border-radius: 50%;
         }
+
         span {
-          //styleName: text/medium;
           font-family: Inter;
-          font-size: 18px;
+          font-size: 1.8rem;
           font-weight: 500;
-          line-height: 32.4px;
+          line-height: 1.4;
+
+          @include sm-desktop{
+            font-size: 1.4rem;
+          }
         }
       }
     }
+
     .button {
       margin-top: 6.4rem;
       display: flex;
       justify-content: flex-start;
       align-items: center;
       gap: 3.2rem;
+
+      @include sm-desktop{
+      margin-top: 4rem;
+      gap: 2.5rem;
+      }
     }
   }
 
@@ -41,8 +64,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    img{
-      width: 100%;
+
+    img {
+      width: 80%;
     }
   }
 }

@@ -1,9 +1,16 @@
 .navigation {
-    display: flex;
-    justify-content: space-between;align-items: center;
-    padding: 2.4rem 0;
-    @include padCenter;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 14rem;
+  position: relative;
+  @include sm-desktop{
+    padding: 2rem 8rem;
+  }
+  @include tab-port{
+    padding: 1rem 6rem;
+  }
+
   &__logo {
     color: $accent-color;
     font-family: "DM Sans", serif;
@@ -11,6 +18,12 @@
     font-weight: 700;
     line-height: 32px;
     letter-spacing: -0.03em;
+    @include sm-desktop{
+      font-size: 3rem;
+    }
+    @include tab-land{
+      font-size: 2.5rem;
+    }
   }
 
   &__nav {
@@ -18,6 +31,7 @@
     align-items: center;
     justify-content: space-between;
     @include absCenter;
+
     &--item {
       padding: 0.8rem;
       font-family: "Inter", serif;
@@ -27,13 +41,13 @@
     }
   }
 
-  &__sign{
-    &--actions{
-        font-family:'DM Sans', serif;
-        display: flex;
-        align-items: center;
-        gap: 3.2rem;
-       
+  &__sign {
+    &--actions {
+      font-family: 'DM Sans', serif;
+      display: flex;
+      align-items: center;
+      gap: 3.2rem;
+
     }
 
   }
