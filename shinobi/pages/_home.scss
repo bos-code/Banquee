@@ -11,10 +11,24 @@
   gap: 4rem;
   align-items: start;
 
+  @include tab-port {
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    gap: 4rem;
+  }
+
   &__textbox {
+    @include tab-port {
+      grid-column: span 3;
+
+    }
 
     .grid-4 {
       margin-top: 6.4rem;
+
+      @include tab-port {
+        margin-top: 4rem;
+      }
 
       .box {
         display: flex;
@@ -27,20 +41,34 @@
         width: 100%;
         gap: 1.6rem;
 
-      
+
+        @include tab-port {
+          gap: 1rem;
+          padding: 2rem;
+        }
+
+
       }
     }
   }
 
   &__imagebox {
-    flex: 2;
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
 
+    @include tab-port {
+      grid-column: span 2;
+    }
+
     img {
       width: 60%;
+
+      @include tab-port {
+        width: 90%;
+
+      }
 
     }
   }
@@ -48,6 +76,10 @@
 
 .transaction {
   height: 80vh;
+
+  @include xl-desktop{
+    height: 40vh;
+  }
   @include padCenter;
 
   display: flex;
@@ -105,8 +137,9 @@
     margin-top: 8.6rem;
     display: flex;
     gap: 1.6rem;
-    height: 63.6rem;
+    // height: 63.6rem;
     overflow-y: scroll;
+
 
     &--box {
       display: flex;
@@ -155,6 +188,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
+    @include tab-port {
+      grid-template-columns: 6fr 4fr;
+    }
+
     .content {
       display: flex;
       flex-direction: column;
@@ -177,10 +214,16 @@
     justify-content: center;
     gap: 3.3rem;
 
+    @include tab-port {
+      gap: 1.5rem;
+    }
+
+
     &--box {
       @include flex-reverse;
       @include gap;
-width: 100%;
+      width: 100%;
+
       .icon-wrapper {
         width: 100%;
         height: 22rem;
@@ -188,14 +231,25 @@ width: 100%;
         border-radius: 1.6rem;
         position: relative;
 
+        @include xl-desktop {
+          height: 25vh;
+          svg{
+            width: 20rem !important ;
+            color: red;
+          }
+        }
         @include sm-desktop {
-          height: 18rem;
+          height: 15vh;
         }
 
         @include tab-port {
-          height: 15rem;
-          svg{
+          height: 12vh;
+
+          svg {
             width: 5rem;
+            @include xl-desktop {
+              width: 10rem;
+            }
           }
         }
 

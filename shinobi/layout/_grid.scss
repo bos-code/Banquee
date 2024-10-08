@@ -11,6 +11,12 @@
     gap: 16.4rem;
     align-content: center;
     justify-content: center;
+@include tab-land{
+    gap: 8rem;
+}
+@include tab-port{
+    gap: 4rem;
+}
 }            
 .grid-3{
     display: grid;
@@ -30,8 +36,8 @@
         
     }
     @include tab-port{
-        grid-template-columns: repeat(3,1fr);
-        gap: 2rem;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
 
     }
 }            

@@ -4,6 +4,10 @@
   align-items: center;
   padding: 2.4rem 14rem;
   position: relative;
+
+  @include xl-desktop{
+    padding: 3rem 15vw;
+  }
   @include sm-desktop{
     padding: 2rem 8rem;
   }

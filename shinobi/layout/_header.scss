@@ -20,9 +20,15 @@
       row-gap: 1.6rem;
       margin-top: 3.2rem;
 
+
       @include sm-desktop {
         margin-top: 2.5rem;
         column-gap: 6rem;
+      }
+
+      @include tab-port {
+        margin-top: 2.5rem;
+        column-gap: 3rem;
       }
 
       .list {
