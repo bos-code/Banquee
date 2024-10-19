@@ -17,6 +17,9 @@
 @include tab-port{
     gap: 4rem;
 }
+@include phone{
+    gap: 1rem;
+}
 }            
 .grid-3{
     display: grid;

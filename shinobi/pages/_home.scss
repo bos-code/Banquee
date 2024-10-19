@@ -77,9 +77,14 @@
 .transaction {
   height: 80vh;
 
-  @include xl-desktop{
+  @include xl-desktop  {
     height: 40vh;
   }
+  @include big-phone  {
+    height: 70vh;
+    gap: 3rem
+  }
+
   @include padCenter;
 
   display: flex;
@@ -103,6 +108,10 @@
     align-items: flex-start;
     flex: 1.2;
     margin: 12.8rem 0;
+
+    @include big-phone{
+      flex: 0.9;
+    }
 
     p {
       margin-top: 1.6rem;
@@ -139,6 +148,10 @@
     gap: 1.6rem;
     // height: 63.6rem;
     overflow-y: scroll;
+
+    @include big-phone{
+      flex: 1;
+    }
 
 
     &--box {
@@ -233,13 +246,15 @@
 
         @include xl-desktop {
           height: 25vh;
-          svg{
-            width: 20rem !important ;
+
+          svg {
+            width: 20rem !important;
             color: red;
           }
         }
+
         @include sm-desktop {
-          height: 15vh;
+          height: 25vh;
         }
 
         @include tab-port {
@@ -247,6 +262,7 @@
 
           svg {
             width: 5rem;
+
             @include xl-desktop {
               width: 10rem;
             }
@@ -274,12 +290,20 @@
   align-items: center;
   gap: 16.9rem;
 
+  @include tab-port {
+    gap: 5rem;
+  }
+
   &__textbox {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     flex: 1.2;
+
+    @include big-phone {
+      flex: 1;
+    }
 
     h2 {
       margin-bottom: 0.8rem;
@@ -324,7 +348,11 @@
     flex: 1;
     display: flex;
     gap: 1.5rem;
-    // height: 63.6rem;
+
+    @include big-phone {
+      gap: 1rem;
+    }
+
 
     &--box {
       display: flex;
@@ -333,6 +361,11 @@
       background-color: $light-shade;
       border-radius: 1.6rem;
       width: 100%;
+      
+      @include big-phone {
+    padding: 1rem;
+      }
+  
 
       //   justify-content: space-between;
       figure {
@@ -365,6 +398,9 @@
   gap: 6.4rem;
   border-bottom: 1px solid $border-color;
   margin-bottom: 4rem;
+  @include big-phone {
+    gap: -10rem;
+  }
 
   &--gallery {
     max-width: 72rem;
@@ -372,6 +408,9 @@
     flex-wrap: wrap;
 
     @include gap;
+    @include big-phone {
+     max-width: 90rem;
+    }
 
     .tool__wrapper {
       padding: 1.6rem;
@@ -381,12 +420,22 @@
       @include sm-desktop {
         padding: 1rem;
       }
+
+      @include big-phone {
+       padding: 0.8rem;
+       .tool{
+        width: 80%;
+       }
+      }
     }
   }
 
   &__textbox {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    @include big-phone{
+      gap: 4rem;
+    }
 
     p {
       padding-top: 1.6rem;
@@ -447,11 +496,14 @@
         width: 100%;
         @include flex;
         flex-direction: column;
-
+        
         position: relative;
 
         img {
           position: absolute;
+          @include big-phone {
+            width: 60%;
+          }
         }
 
         .img-2 {
