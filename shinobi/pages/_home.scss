@@ -77,10 +77,11 @@
 .transaction {
   height: 80vh;
 
-  @include xl-desktop  {
+  @include xl-desktop {
     height: 40vh;
   }
-  @include big-phone  {
+
+  @include big-phone {
     height: 70vh;
     gap: 3rem
   }
@@ -109,7 +110,7 @@
     flex: 1.2;
     margin: 12.8rem 0;
 
-    @include big-phone{
+    @include big-phone {
       flex: 0.9;
     }
 
@@ -149,7 +150,7 @@
     // height: 63.6rem;
     overflow-y: scroll;
 
-    @include big-phone{
+    @include big-phone {
       flex: 1;
     }
 
@@ -361,11 +362,11 @@
       background-color: $light-shade;
       border-radius: 1.6rem;
       width: 100%;
-      
+
       @include big-phone {
-    padding: 1rem;
+        padding: 1rem;
       }
-  
+
 
       //   justify-content: space-between;
       figure {
@@ -398,6 +399,7 @@
   gap: 6.4rem;
   border-bottom: 1px solid $border-color;
   margin-bottom: 4rem;
+
   @include big-phone {
     gap: -10rem;
   }
@@ -408,8 +410,9 @@
     flex-wrap: wrap;
 
     @include gap;
+
     @include big-phone {
-     max-width: 90rem;
+      max-width: 90rem;
     }
 
     .tool__wrapper {
@@ -422,10 +425,11 @@
       }
 
       @include big-phone {
-       padding: 0.8rem;
-       .tool{
-        width: 80%;
-       }
+        padding: 0.8rem;
+
+        .tool {
+          width: 80%;
+        }
       }
     }
   }
@@ -433,7 +437,8 @@
   &__textbox {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    @include big-phone{
+
+    @include big-phone {
       gap: 4rem;
     }
 
@@ -496,11 +501,12 @@
         width: 100%;
         @include flex;
         flex-direction: column;
-        
+
         position: relative;
 
         img {
           position: absolute;
+
           @include big-phone {
             width: 60%;
           }
@@ -526,4 +532,56 @@
     gap: 1.6rem;
     margin: 20rem 0 5rem;
   }
+}
+
+
+
+
+
+
+
+
+
+.testimonal {
+  @include padCenter;
+  @include padTop;
+
+  .sec-header {
+    @include flex;
+  }
+
+  .test-grid {
+    @include grid--3--cols;
+  }
+
+  .testimonials {
+    padding: 3.2rem;
+
+
+  }
+
+  .content {
+    @include flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    img {
+      width: 100%;
+    }
+  }
+
+
+  .namebx {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
 }

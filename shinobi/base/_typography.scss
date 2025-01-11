@@ -168,3 +168,25 @@ color: $text--color-light;
   letter-spacing: -1px;
 }
 }
+
+.texthead {
+font-family: DM Sans;
+font-size: 2.8rem;
+font-weight: 500;
+line-height: 1.2;
+letter-spacing: -0.03em;
+
+}
+.test-name {
+font-family: ;
+font-size: 18px;
+font-weight: 500;
+line-height: 25.2px;
+letter-spacing: -0.03em;
+text-align: left;
+
+}
+
+.test-job {
+  @extend .price;
+}

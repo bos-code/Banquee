@@ -43,4 +43,8 @@
         gap: 1rem;
 
     }
+
+    @mixin grid--3--cols{
+        display: grid;grid-template-columns: repeat(3,1fr);
+    }
 }            
