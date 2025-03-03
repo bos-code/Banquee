@@ -933,6 +933,11 @@
     .section_help-content {
       display: flex;
 
+      @include tab-port {
+        flex-direction: column;
+        gap: 4rem;
+      }
+
       .content-info {
         flex: 1;
 
@@ -983,6 +988,10 @@
             margin-top: 2rem;
             .paragraph.sm {
               width: 70%;
+
+              @include medium-phone {
+                width: 100%;
+              }
             }
 
             .list--wrapper {
