@@ -1,0 +1,136 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.main-header {
+  margin-bottom: 20rem;
+
+  .header {
+    margin-top: 8rem;
+
+    @include phone {
+      margin-top: 4rem;
+    }
+
+    .header_wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16rem;
+      width: 100%;
+
+      @include tab-land {
+        gap: 12rem;
+      }
+
+      @include tab-port {
+        display: flex;
+        flex-direction: column;
+
+        gap: 5rem;
+      }
+    }
+
+    .header_content {
+      align-items: center;
+      flex: 1;
+
+      @include phone {
+        text-align: center;
+      }
+    }
+
+    .header_subtitle {
+      font-family: $secondary-font;
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: $default-color;
+      margin: 2rem 0 3rem 0;
+      animation: moveinright 1s ease-out;
+
+      @include tab-land() {
+        font-size: 1.8rem;
+      }
+
+      @include phone {
+        line-height: 1.4;
+      }
+    }
+
+    .header_content-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      margin: 4rem 0;
+      animation: moveinBottom 1s ease-out;
+
+      @include phone {
+        display: none;
+      }
+
+      .header_content-item {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+    }
+
+    .header_actions {
+      display: flex;
+      gap: 4rem;
+      align-items: center;
+      animation: moveinleft 1s ease-out;
+
+      @include phone {
+        justify-content: center;
+        animation: moveinBottom 1s ease-out;
+      }
+
+      @include medium-phone {
+        margin: 2rem 0;
+      }
+
+      .header_action-wrapper {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        &:hover {
+          animation: pulsate 1s infinite;
+        }
+      }
+    }
+
+    .header_image {
+      flex: 1;
+      width: 100%;
+
+      @include tab-port {
+        display: flex;
+        justify-content: center;
+      }
+
+      @include phone {
+        transform: rotate(270deg);
+        margin-top: -7rem;
+      }
+
+      img {
+        height: 60vh;
+        object-fit: contain;
+        width: 100%;
+
+        @include tab-port {
+          height: 40rem;
+        }
+
+        @include phone {
+          height: 30rem;
+          animation: rotate 1s infinite;
+          -webkit-animation: rotate 1s infinite;
+        }
+      }
+    }
+  }
+}

@@ -1,923 +1,1120 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banquee. saas | Bank Website</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.png"
+      type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Banquee. saas | Bank Website</title>
-  <link rel="shortcut icon" href="/assests/img/favicon.png" type="image/x-icon" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/css/main.css" />
-  <script src="/js/main.js" defer></script>
-</head>
+  <body>
+    <main class="frontpage">
+      <main class="main-header">
+        <nav class="navigation center-children--sm">
+          <input type="checkbox" id="checkbox" />
+          <h3 class="nav_logo">bankquee.</h3>
+          <ul class="nav_lists">
+            <li class="cta nav_item">Feature</li>
+            <span class="nav_item-wrapper">
+              <li class="cta nav_item">Compare</li>
+              <img src="/assets/icons/down-black.svg" alt="drop-down" />
+            </span>
+            <li class="cta nav_item">Support</li>
+            <span class="nav_item-wrapper">
+              <li class="cta nav_item">Blog</li>
+              <img src="/assets/icons/down-black.svg" alt="drop-down" />
+            </span>
 
-<body>
-  <span class="loader"></span>
-  <nav id="navBar" class="navigation">
-    <a href="/" class="navigation__logo">
-      <span id="logo">banquee.</span>
-    </a>
+            <div class="nav_actions pb">
+              <a href="#" class="cta color-tx"> Login</a
+              ><a href="#" class="btn-2">Open Account</a>
+            </div>
+          </ul>
 
-    <ul class="navigation__nav">
-      <li class="navigation__nav--item">
-        <a href="#">Features</a>
-      </li>
-      <li class="navigation__nav--item btn-1">
-        <a href="/compare.html"> Compare</a>
-        <svg id="compareDropdown" width="25" height="25" viewBox="0 0 25 25" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M12.4998 15.5L8.25684 11.257L9.67184 9.843L12.4998 12.672L15.3278 9.843L16.7428 11.257L12.4998 15.5Z"
-            fill="#1A191E" />
-        </svg>
-      </li>
-      <li class="navigation__nav--item">
-        <a href="#">Support</a>
-      </li>
-      <li class="navigation__nav--item btn-1">
-        <a href="#">Blog</a>
-        <svg id="blogDropdown" width="25" height="25" viewBox="0 0 25 25" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M12.4998 15.5L8.25684 11.257L9.67184 9.843L12.4998 12.672L15.3278 9.843L16.7428 11.257L12.4998 15.5Z"
-            fill="#1A191E" />
-        </svg>
-      </li>
-    </ul>
+          <label class="nav_toggle" for="checkbox">
+            <span class="open"><ion-icon name="menu"></ion-icon></span>
+            <span class="close"><ion-icon name="close"></ion-icon></span
+          ></label>
 
-    <ul class="navigation__sign">
-      <li class="navigation__sign--actions">
-        <a href="#" id="navigation__sign--action" ion class="navigation__sign--actions-action btn">Login
-        </a>
-        <a href="#" id="navigation__sign--action" class="navigation__sign--actions-action btn-2">open account
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <header id="homeHeader" class="home-header grid-2">
-    <div class="home-header__textbox">
-      <h1 class="heading-primary">Banking starts here.</h1>
-      <p class="header-description paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore.
-      </p>
-      <ul class="check-list grid-3">
-        <li class="list">
-          <svg id="checkmark" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M7.50005 12.2408L14.3941 5.34604L15.4553 6.40654L7.50005 14.3618L2.72705 9.58879L3.78755 8.52829L7.50005 12.2408Z"
-              fill="#5BB5A2" />
-          </svg>
-          <span>Instant Transfer</span>
-        </li>
-        <li class="list">
-          <svg id="checkmark" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M7.50005 12.2408L14.3941 5.34604L15.4553 6.40654L7.50005 14.3618L2.72705 9.58879L3.78755 8.52829L7.50005 12.2408Z"
-              fill="#5BB5A2" />
-          </svg>
-          <span>Instant Transfer</span>
-        </li>
-        <li class="list">
-          <svg id="checkmark" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M7.50005 12.2408L14.3941 5.34604L15.4553 6.40654L7.50005 14.3618L2.72705 9.58879L3.78755 8.52829L7.50005 12.2408Z"
-              fill="#5BB5A2" />
-          </svg>
-          <span>Instant Transfer</span>
-        </li>
-        <li class="list">
-          <svg id="checkmark" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M7.50005 12.2408L14.3941 5.34604L15.4553 6.40654L7.50005 14.3618L2.72705 9.58879L3.78755 8.52829L7.50005 12.2408Z"
-              fill="#5BB5A2" />
-          </svg>
-          <span>Instant Transfer</span>
-        </li>
-      </ul>
-      <div class="button">
-        <button class="btn-2">Open Account</button>
-        <button class="btn-default ">
-          <span>Compare Cards</span><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M16.2286 11.8699L10.7921 6.54934L12.2252 5.1468L20.1083 12.8618L12.2252 20.5768L10.7921 19.1742L16.2286 13.8537H3.89209V11.8699H16.2286Z"
-              fill="#5BB5A2" />
-          </svg>
-        </button>
-      </div>
-    </div>
+          <div class="nav_actions dk">
+            <a href="#" class="cta color-tx"> Login</a
+            ><a href="#" class="btn-2">Open Account</a>
+          </div>
+        </nav>
 
-    <figure class="home-header__image">
-      <img src="/assests/img/cards.png" alt="" />
-    </figure>
-  </header>
-  <main class="main">
-    <section class="features">
-      <div class="features__textbox">
-        <h2 class="heading-secondary">
-          One app. <br />
-          One banking.
-        </h2>
-        <div class="grid-4">
-          <div class="box">
-            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.723633" width="50" height="50" rx="25" fill="#E8F2EE" />
-              <path
-                d="M26.1665 22.2236H35.4998L23.8332 39.7236V29.2236H15.6665L26.1665 11.7236V22.2236ZM23.8332 24.557V20.147L19.7872 26.8903H26.1665V32.0166L31.14 24.557H23.8332Z"
-                fill="#5BB5A2" />
-            </svg>
-            <span class="box-header">Instant transactions</span>
-            <span class="box-description">Odio euismod lacinia at quis. Amet purus gravida quis blandit
-              turpis.</span>
-          </div>
-          <div class="box">
-            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.723633" width="50" height="50" rx="25" fill="#E8F2EE" />
-              <path
-                d="M22.6668 35.057H18.0002V37.3903H15.6668V35.057H14.5002C14.1907 35.057 13.894 34.9341 13.6752 34.7153C13.4564 34.4965 13.3335 34.1998 13.3335 33.8903V16.3903C13.3335 16.0809 13.4564 15.7842 13.6752 15.5654C13.894 15.3466 14.1907 15.2237 14.5002 15.2237H22.6668V13.5787C22.6669 13.494 22.6853 13.4103 22.721 13.3335C22.7566 13.2567 22.8085 13.1886 22.8731 13.1338C22.9377 13.0791 23.0135 13.0391 23.0951 13.0166C23.1767 12.9941 23.2623 12.9896 23.3458 13.0035L35.6915 15.0615C35.9639 15.1068 36.2114 15.2472 36.39 15.4579C36.5686 15.6685 36.6667 15.9357 36.6668 16.2118V18.7237H37.8335V21.057H36.6668V29.2237H37.8335V31.557H36.6668V34.0688C36.6667 34.345 36.5686 34.6122 36.39 34.8228C36.2114 35.0334 35.9639 35.1739 35.6915 35.2192L34.3335 35.4455V37.3903H32.0002V35.8352L23.3458 37.2772C23.2623 37.2911 23.1767 37.2866 23.0951 37.2641C23.0135 37.2416 22.9377 37.2016 22.8731 37.1468C22.8085 37.0921 22.7566 37.024 22.721 36.9472C22.6853 36.8703 22.6669 36.7867 22.6668 36.702V35.057ZM25.0002 34.637L34.3335 33.0807V17.2L25.0002 15.6448V34.6358V34.637ZM30.2502 28.057C29.2842 28.057 28.5002 26.7503 28.5002 25.1403C28.5002 23.5303 29.2842 22.2237 30.2502 22.2237C31.2162 22.2237 32.0002 23.5303 32.0002 25.1403C32.0002 26.7503 31.2162 28.057 30.2502 28.057Z"
-                fill="#5BB5A2" />
-            </svg>
+        <header class="header center-children--bg">
+          <div class="header_wrapper">
+            <div class="header_content">
+              <h1 class="heading-primary bg">
+                Banking<br />
+                starts here.
+              </h1>
+              <p class="header_subtitle">
+                We are here to help you with all your banking needs. Open an
+                account today and start banking with ease.
+              </p>
 
-            <span class="box-header">Saving <br />
-              accounts</span>
-            <span class="box-description">Odio euismod lacinia at quis. Amet purus gravida quis blandit
-              turpis.</span>
-          </div>
-          <div class="box">
-            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.723633" width="50" height="50" rx="25" fill="#E8F2EE" />
-              <path
-                d="M19.1668 16.3903V35.057H30.8335V16.3903H19.1668ZM18.0002 14.057H32.0002C32.3096 14.057 32.6063 14.1799 32.8251 14.3987C33.0439 14.6175 33.1668 14.9143 33.1668 15.2237V36.2237C33.1668 36.5331 33.0439 36.8298 32.8251 37.0486C32.6063 37.2674 32.3096 37.3903 32.0002 37.3903H18.0002C17.6907 37.3903 17.394 37.2674 17.1752 37.0486C16.9564 36.8298 16.8335 36.5331 16.8335 36.2237V15.2237C16.8335 14.9143 16.9564 14.6175 17.1752 14.3987C17.394 14.1799 17.6907 14.057 18.0002 14.057ZM25.0002 31.557C25.3096 31.557 25.6063 31.6799 25.8251 31.8987C26.0439 32.1175 26.1668 32.4143 26.1668 32.7237C26.1668 33.0331 26.0439 33.3298 25.8251 33.5486C25.6063 33.7674 25.3096 33.8903 25.0002 33.8903C24.6907 33.8903 24.394 33.7674 24.1752 33.5486C23.9564 33.3298 23.8335 33.0331 23.8335 32.7237C23.8335 32.4143 23.9564 32.1175 24.1752 31.8987C24.394 31.6799 24.6907 31.557 25.0002 31.557Z"
-                fill="#5BB5A2" />
-            </svg>
+              <ul class="header_content-list">
+                <li class="header_content-item">
+                  <img
+                    src="/assets/icons/checkmark-green.svg"
+                    alt="checkmark" />
+                  <p class="paragraph md">Open an account in minutes</p>
+                </li>
+                <li class="header_content-item">
+                  <img
+                    src="/assets/icons/checkmark-green.svg"
+                    alt="checkmark" />
+                  <p class="paragraph md">Get a free debit card</p>
+                </li>
+                <li class="header_content-item">
+                  <img
+                    src="/assets/icons/checkmark-green.svg"
+                    alt="checkmark" />
+                  <p class="paragraph md">24/7 customer support</p>
+                </li>
+                <li class="header_content-item">
+                  <img
+                    src="/assets/icons/checkmark-green.svg"
+                    alt="checkmark" />
+                  <p class="paragraph md">100% mobile banking</p>
+                </li>
+              </ul>
 
-            <span class="box-header">Mobile <br />
-              banking</span>
-            <span class="box-description">Odio euismod lacinia at quis. Amet purus gravida quis blandit
-              turpis.</span>
-          </div>
-          <div class="box">
-            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.723633" width="50" height="50" rx="25" fill="#E8F2EE" />
-              <path
-                d="M16.8333 15.2236V33.8903H35.5V36.2236H14.5V15.2236H16.8333ZM34.6752 19.0655L36.3248 20.7151L29.6667 27.3733L26.1667 23.8745L21.1582 28.8818L19.5085 27.2321L26.1667 20.574L29.6667 24.0728L34.6752 19.0655Z"
-                fill="#5BB5A2" />
-            </svg>
+              <div class="header_actions">
+                <a href="#" class="btn-2">Open Account</a>
 
-            <span class="box-header">Advanced <br />
-              statistics</span>
-            <span class="box-description">Odio euismod lacinia at quis. Amet purus gravida quis blandit
-              turpis.</span>
-          </div>
-          <div class="box">
-            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.723633" width="50" height="50" rx="25" fill="#E8F2EE" />
-              <path
-                d="M14.5002 15.2236H35.5002C35.8096 15.2236 36.1063 15.3465 36.3251 15.5653C36.5439 15.7841 36.6668 16.0809 36.6668 16.3903V35.057C36.6668 35.3664 36.5439 35.6631 36.3251 35.8819C36.1063 36.1007 35.8096 36.2236 35.5002 36.2236H14.5002C14.1907 36.2236 13.894 36.1007 13.6752 35.8819C13.4564 35.6631 13.3335 35.3664 13.3335 35.057V16.3903C13.3335 16.0809 13.4564 15.7841 13.6752 15.5653C13.894 15.3465 14.1907 15.2236 14.5002 15.2236ZM34.3335 25.7236H15.6668V33.8903H34.3335V25.7236ZM34.3335 21.057V17.557H15.6668V21.057H34.3335Z"
-                fill="#5BB5A2" />
-            </svg>
+                <span class="header_action-wrapper">
+                  <a href="#" class="cta color-tx">Compare Cards</a>
+                  <img
+                    src="/assets/icons/arrow-right-green.svg"
+                    alt="arrow-right" />
+                </span>
+              </div>
+            </div>
 
-            <span class="box-header">Virtual <br />
-              cards</span>
-            <span class="box-description">Odio euismod lacinia at quis. Amet purus gravida quis blandit
-              turpis.</span>
-          </div>
-          <div class="box">
-            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.723633" width="50" height="50" rx="25" fill="#E8F2EE" />
-              <path
-                d="M11.8052 19.8868C15.5374 16.8632 20.1968 15.2165 25.0002 15.2237C29.9993 15.2237 34.5902 16.9702 38.1952 19.8868L36.7298 21.7022C33.4121 19.0142 29.2701 17.5505 25.0002 17.557C20.5563 17.557 16.4765 19.1087 13.2705 21.7022L11.8052 19.8868ZM15.4697 24.4252C18.1654 22.2412 21.5308 21.0518 25.0002 21.057C28.4694 21.0518 31.8346 22.2407 34.5307 24.424L33.0642 26.2393C30.7832 24.3917 27.9356 23.3857 25.0002 23.3903C21.9458 23.3903 19.14 24.4578 16.9362 26.2393L15.4697 24.424V24.4252ZM19.1353 28.9635C20.7942 27.6194 22.8651 26.8873 25.0002 26.8903C27.2215 26.8903 29.262 27.6662 30.865 28.9623L29.3985 30.7777C28.1544 29.7699 26.6012 29.2212 25.0002 29.2237C23.3342 29.2237 21.8035 29.8058 20.6018 30.7777L19.1353 28.9623V28.9635ZM22.801 33.5018C23.4229 32.9975 24.1995 32.7227 25.0002 32.7237C25.8332 32.7237 26.5985 33.0153 27.1993 33.5007L25.0002 36.2237L22.801 33.5007V33.5018Z"
-                fill="#5BB5A2" />
-            </svg>
-
-            <span class="box-header">Contactless <br />
-              payments</span>
-            <span class="box-description">Odio euismod lacinia at quis. Amet purus gravida quis blandit
-              turpis.</span>
-          </div>
-        </div>
-      </div>
-      <div class="features__imagebox">
-        <img src="/assests/img/app.png" alt="" />
-      </div>
-    </section>
-
-    <section class="transaction">
-      <div class="transaction__textbox">
-        <h2 class="heading-tertiary">Send & receive <br> money instantly</h2>
-        <p class="description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do
-          eiusmod tempor incididunt ut labore et.
-        </p>
-        <ul class="trans">
-          <li class="transaction_list">
-            <img src="/assests/svg/checked svg.svg" alt="" />
-            <span class="transaction-text">Malesuada Ipsum</span>
-          </li>
-          <li class="transaction_list">
-            <img src="/assests/svg/checked svg.svg" alt="" />
-            <span class="transaction-text">Vestibulum</span>
-          </li>
-          <li class="transaction_list">
-            <img src="/assests/svg/checked svg.svg" alt="" />
-            <span class="transaction-text">Parturient Lorem</span>
-          </li>
-        </ul>
-      </div>
-      <div class="transaction__main">
-        <div class="transaction__main--box">
-          <figure>
-            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
-              <path
-                d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
-                fill="white" />
-            </svg>
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Apple</span>
-            <span class="transact-descript">Electronic</span>
-          </div>
-          <div class="price"><span class="price-figure">-999€</span></div>
-        </div>
-        <div class="transaction__main--box">
-          <figure>
-            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
-              <path
-                d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
-                fill="white" />
-            </svg>
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Apple</span>
-            <span class="transact-descript">Electronic</span>
-          </div>
-          <div class="price"><span class="price-figure">-999€</span></div>
-        </div>
-        <div class="transaction__main--box">
-          <figure>
-            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
-              <path
-                d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
-                fill="white" />
-            </svg>
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Apple</span>
-            <span class="transact-descript">Electronic</span>
-          </div>
-          <div class="price"><span class="price-figure">-999€</span></div>
-        </div>
-        <div class="transaction__main--box">
-          <figure>
-            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
-              <path
-                d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
-                fill="white" />
-            </svg>
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Apple</span>
-            <span class="transact-descript">Electronic</span>
-          </div>
-          <div class="price"><span class="price-figure">-999€</span></div>
-        </div>
-        <div class="transaction__main--box">
-          <figure>
-            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
-              <path
-                d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
-                fill="white" />
-            </svg>
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Apple</span>
-            <span class="transact-descript">Electronic</span>
-          </div>
-          <div class="price"><span class="price-figure">-999€</span></div>
-        </div>
-        <div class="transaction__main--box">
-          <figure>
-            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
-              <path
-                d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
-                fill="white" />
-            </svg>
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Apple</span>
-            <span class="transact-descript">Electronic</span>
-          </div>
-          <div class="price"><span class="price-figure">-999€</span></div>
-        </div>
-        <div class="transaction__main--box">
-          <figure>
-            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
-              <path
-                d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
-                fill="white" />
-            </svg>
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Apple</span>
-            <span class="transact-descript">Electronic</span>
-          </div>
-          <div class="price"><span class="price-figure">-999€</span></div>
-        </div>
-        <div class="transaction__main--box">
-          <figure>
-            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
-              <path
-                d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
-                fill="white" />
-            </svg>
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Apple</span>
-            <span class="transact-descript">Electronic</span>
-          </div>
-          <div class="price"><span class="price-figure">-999€</span></div>
-        </div>
-        <div class="transaction__main--box">
-          <figure>
-            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
-              <path
-                d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
-                fill="white" />
-            </svg>
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Apple</span>
-            <span class="transact-descript">Electronic</span>
-          </div>
-          <div class="price"><span class="price-figure">-999€</span></div>
-        </div>
-        <div class="transaction__main--box">
-          <figure>
-            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
-              <path
-                d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
-                fill="white" />
-            </svg>
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Apple</span>
-            <span class="transact-descript">Electronic</span>
-          </div>
-          <div class="price"><span class="price-figure">-999€</span></div>
-        </div>
-        <div class="transaction__main--box">
-          <figure>
-            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
-              <path
-                d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
-                fill="white" />
-            </svg>
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Apple</span>
-            <span class="transact-descript">Electronic</span>
-          </div>
-          <div class="price"><span class="price-figure">-999€</span></div>
-        </div>
-        <div class="transaction__main--box">
-          <figure>
-            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.5" width="50" height="50" rx="8" fill="#5BB5A2" />
-              <path
-                d="M24.5612 19.9257C23.5392 19.9257 21.9572 18.7637 20.2912 18.8057C18.0932 18.8337 16.0772 20.0797 14.9432 22.0537C12.6612 26.0157 14.3552 31.8677 16.5812 35.0877C17.6732 36.6557 18.9612 38.4197 20.6692 38.3637C22.3072 38.2937 22.9232 37.2997 24.9112 37.2997C26.8852 37.2997 27.4452 38.3637 29.1812 38.3217C30.9452 38.2937 32.0652 36.7257 33.1432 35.1437C34.3892 33.3237 34.9072 31.5597 34.9352 31.4617C34.8932 31.4477 31.5052 30.1457 31.4632 26.2257C31.4352 22.9497 34.1372 21.3817 34.2632 21.3117C32.7232 19.0577 30.3572 18.8057 29.5312 18.7497C27.3752 18.5817 25.5692 19.9257 24.5612 19.9257ZM28.2012 16.6217C29.1112 15.5297 29.7132 14.0037 29.5452 12.4917C28.2432 12.5477 26.6752 13.3597 25.7372 14.4517C24.8972 15.4177 24.1692 16.9717 24.3652 18.4557C25.8072 18.5677 27.2912 17.7137 28.2012 16.6217Z"
-                fill="white" />
-            </svg>
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Apple</span>
-            <span class="transact-descript">Electronic</span>
-          </div>
-          <div class="price"><span class="price-figure">-999€</span></div>
-        </div>
-
-      </div>
-    </section>
-    <section class="savings">
-      <div class="savings__textbox">
-        <div class="content"> <span class="section__intro">Saving Accounts</span>
-          <h3 class="section__heading">Organize your money the right way</h3>
-          <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do
-            eiusmod tempor incididunt ut labore et.
-          </p>
-        </div>
-        <button class="button">
-          <span class="content">All Features</span>
-          <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M13.2286 6.73183L7.79209 1.41128L9.2252 0.00873375L17.1083 7.72373L9.2252 15.4387L7.79209 14.0362L13.2286 8.71563H0.89209L0.89209 6.73183H13.2286Z"
-              fill="#5BB5A2" />
-          </svg>
-        </button>
-      </div>
-
-      <div class="features__slides">
-        <div class="features__slides--box">
-          <div class="icon-wrapper card-1">
-            <div class="icon">
-              <svg width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_618_247)">
-                  <path
-                    d="M60.4444 52.4499C59.7031 50.7379 58.8516 48.8802 56.8889 48.8802H55.1111C57.0738 48.8802 58.6667 47.2819 58.6667 45.3104V14.9602C58.6676 14.4923 58.5764 14.0288 58.3982 13.5962C58.22 13.1636 57.9584 12.7704 57.6282 12.4389C57.298 12.1074 56.9058 11.8442 56.4739 11.6643C56.0421 11.4844 55.579 11.3913 55.1111 11.3904H8.88889C6.92622 11.3904 5.33333 12.9886 5.33333 14.9602V45.3104C5.33333 47.2819 6.92622 48.8802 8.88889 48.8802H7.11111C5.14844 48.8802 4.14756 50.6651 3.55556 52.4499L0 61.1522C0 63.1255 1.59289 64.7237 3.55556 64.7237H60.4444C62.4071 64.7237 64 63.1255 64 61.1539L60.4444 52.4499Z"
-                    fill="#CCD6DD" />
-                  <path
-                    d="M0.0141602 61.3015L0.0248268 61.4028L0.327049 62.6331C0.607653 63.2547 1.06131 63.7825 1.63381 64.1532C2.20631 64.5239 2.87344 64.722 3.55549 64.7237H60.4444C61.3623 64.7207 62.2434 64.3628 62.9035 63.725C63.5635 63.0871 63.9513 62.2188 63.9857 61.3015H0.0141602Z"
-                    fill="#9AAAB4" />
-                  <path
-                    d="M55.1109 43.5237C55.1109 44.5104 54.3162 45.3086 53.3331 45.3086H10.6664C9.68512 45.3086 8.88867 44.5104 8.88867 43.5237V16.7468C8.88867 15.7601 9.68512 14.9619 10.6664 14.9619H53.3331C54.3162 14.9619 55.1109 15.7619 55.1109 16.7468V43.5237Z"
-                    fill="#5DADEC" />
-                  <path
-                    d="M58.4997 55.9094L57.1486 52.0427C56.7237 51.2249 56.0197 50.5547 55.0366 50.5547H9.08464C8.1033 50.5547 7.47397 51.28 7.02953 52.3965L5.80641 55.9111C5.41708 56.9707 6.60286 57.696 7.58419 57.696H21.0562C21.0562 57.696 22.722 57.6125 23.0171 56.6151C23.3584 55.4631 23.7549 53.728 23.8402 53.4222C23.9717 52.9529 24.53 52.4782 25.362 52.4782H40.6117C41.5006 52.4782 41.938 52.928 42.0535 53.4845C42.1282 53.8471 42.6082 55.5129 42.8322 56.6525C43.0295 57.6676 45.0029 57.6942 45.0029 57.6942H56.7255C57.7051 57.6942 58.8891 56.8569 58.4997 55.9094Z"
-                    fill="#AEBBC1" />
-                  <path
-                    d="M39.7777 59.5913H25.9448C25.2781 59.5913 24.9883 58.9815 25.0843 58.3913C25.1803 57.8029 25.7226 55.2038 25.7652 54.9015C25.8061 54.5975 26.2523 54.2349 26.6968 54.2349H39.1679C39.6959 54.2349 40.039 54.5246 40.1457 55.1042C40.2506 55.6855 40.6826 58.0215 40.7163 58.5549C40.7501 59.09 40.4159 59.5913 39.7777 59.5913Z"
-                    fill="#9AAAB4" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_618_247">
-                    <rect width="64" height="64" fill="white" transform="translate(0 0.723633)" />
-                  </clipPath>
-                </defs>
-              </svg>
-
+            <div class="header_image">
+              <img src="/assets/images/cards.png" alt="header-image" />
             </div>
           </div>
-          <div class="text_wrapper">
-            <p class="icon--description">New Laptop</p>
-            <p class="price">400$</p>
-          </div>
-        </div>
-        <div class="features__slides--box">
-          <div class="icon-wrapper card-2">
-            <div class="icon">
-              <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_618_258)">
-                  <path
-                    d="M14.0002 48.7236C17.9142 48.7236 21.2662 50.9936 22.9102 54.2676L29.8642 50.7896C26.9762 44.8396 20.8922 40.7236 13.8322 40.7236C11.3154 40.7242 8.8275 41.2608 6.53418 42.2976L9.87018 49.6376C11.1653 49.0402 12.5739 48.7285 14.0002 48.7236ZM58.0002 48.7236C60.9342 48.7236 63.5442 50.0096 65.3762 52.0196L71.1702 46.7496C69.5024 44.8556 67.4503 43.3385 65.1505 42.2995C62.8506 41.2604 60.3558 40.7232 57.8322 40.7236C50.6802 40.7236 44.5282 44.9456 41.6862 51.0236L48.9822 54.4676C50.5862 51.0836 54.0062 48.7236 58.0002 48.7236Z"
-                    fill="#EA596E" />
-                  <path
-                    d="M14 44.7236C12.1615 44.7236 10.341 45.0858 8.64243 45.7893C6.94387 46.4929 5.40053 47.5241 4.10051 48.8241C2.80049 50.1242 1.76925 51.6675 1.06569 53.3661C0.362121 55.0646 0 56.8851 0 58.7236C0 60.5621 0.362121 62.3826 1.06569 64.0812C1.76925 65.7798 2.80049 67.3231 4.10051 68.6231C5.40053 69.9232 6.94387 70.9544 8.64243 71.6579C10.341 72.3615 12.1615 72.7236 14 72.7236C17.713 72.7236 21.274 71.2486 23.8995 68.6231C26.525 65.9976 28 62.4367 28 58.7236C28 55.0106 26.525 51.4496 23.8995 48.8241C21.274 46.1986 17.713 44.7236 14 44.7236ZM14 68.7236C11.3478 68.7236 8.8043 67.6701 6.92893 65.7947C5.05357 63.9193 4 61.3758 4 58.7236C4 56.0715 5.05357 53.5279 6.92893 51.6526C8.8043 49.7772 11.3478 48.7236 14 48.7236C16.6522 48.7236 19.1957 49.7772 21.0711 51.6526C22.9464 53.5279 24 56.0715 24 58.7236C24 61.3758 22.9464 63.9193 21.0711 65.7947C19.1957 67.6701 16.6522 68.7236 14 68.7236ZM58 44.7236C54.2867 44.7239 50.7256 46.1993 48.1001 48.8251C45.4746 51.451 43.9997 55.0123 44 58.7256C44.0003 62.4389 45.4756 66 48.1015 68.6255C50.7274 71.2511 54.2887 72.7259 58.002 72.7256C59.8406 72.7255 61.6612 72.3632 63.3599 71.6595C65.0585 70.9557 66.6019 69.9243 67.9019 68.6241C69.2019 67.3239 70.2331 65.7804 70.9366 64.0817C71.6401 62.3829 72.0021 60.5623 72.002 58.7236C72.0019 56.885 71.6396 55.0644 70.9359 53.3658C70.2321 51.6671 69.2007 50.1237 67.9005 48.8237C66.6003 47.5237 65.0568 46.4925 63.358 45.789C61.6593 45.0855 59.8386 44.7235 58 44.7236ZM58 68.7236C55.3478 68.7236 52.8043 67.6701 50.9289 65.7947C49.0536 63.9193 48 61.3758 48 58.7236C48 56.0715 49.0536 53.5279 50.9289 51.6526C52.8043 49.7772 55.3478 48.7236 58 48.7236C60.6522 48.7236 63.1957 49.7772 65.0711 51.6526C66.9464 53.5279 68 56.0715 68 58.7236C68 61.3758 66.9464 63.9193 65.0711 65.7947C63.1957 67.6701 60.6522 68.7236 58 68.7236Z"
-                    fill="#292F33" />
-                  <path
-                    d="M59.968 58.5676C59.955 58.4332 59.9282 58.3005 59.888 58.1716C59.8529 58.0433 59.8053 57.9187 59.746 57.7996C59.72 57.7516 59.716 57.6956 59.688 57.6496L45.688 35.6496C45.547 35.4279 45.3637 35.2361 45.1486 35.0852C44.9335 34.9343 44.6907 34.8273 44.4342 34.7703C44.1777 34.7133 43.9125 34.7074 43.6537 34.7529C43.3949 34.7984 43.1476 34.8945 42.926 35.0356C42.6467 35.218 42.4184 35.4684 42.2627 35.7634C42.107 36.0584 42.029 36.3882 42.036 36.7216H24C23.4696 36.7216 22.9609 36.9323 22.5858 37.3074C22.2107 37.6825 22 38.1912 22 38.7216C22 39.2521 22.2107 39.7608 22.5858 40.1358C22.9609 40.5109 23.4696 40.7216 24 40.7216H44C44.054 40.7216 44.1 40.6936 44.154 40.6896L54.356 56.7236H36C35.4696 56.7236 34.9609 56.9343 34.5858 57.3094C34.2107 57.6845 34 58.1932 34 58.7236C34 59.2541 34.2107 59.7628 34.5858 60.1378C34.9609 60.5129 35.4696 60.7236 36 60.7236H58.002C58.3086 60.7169 58.6095 60.6402 58.882 60.4996C58.944 60.4656 59.014 60.4516 59.076 60.4116C59.136 60.3716 59.172 60.3096 59.226 60.2676C59.4326 60.1064 59.6035 59.9042 59.728 59.6736C59.788 59.5616 59.838 59.4536 59.878 59.3296C59.9186 59.1988 59.9455 59.0641 59.958 58.9276C59.966 58.8556 60 58.7956 60 58.7236C60 58.6696 59.972 58.6216 59.968 58.5676Z"
-                    fill="#DD2E44" />
-                  <path
-                    d="M43.1618 32.7236L37.3638 48.9576L25.5058 35.4076C25.3339 35.2067 25.1237 35.0418 24.8876 34.9226C24.6515 34.8034 24.3941 34.7323 24.1303 34.7132C23.8665 34.6942 23.6015 34.7277 23.3507 34.8117C23.0999 34.8958 22.8683 35.0288 22.6692 35.2029C22.4702 35.3771 22.3077 35.5891 22.1911 35.8265C22.0745 36.0639 22.0062 36.3221 21.99 36.5861C21.9739 36.8501 22.0103 37.1147 22.0971 37.3645C22.184 37.6144 22.3195 37.8445 22.4958 38.0416L35.8238 53.2716L34.1158 58.0516C33.9376 58.5513 33.9652 59.1013 34.1925 59.5806C34.4198 60.06 34.8282 60.4294 35.3278 60.6076C35.8275 60.7859 36.3775 60.7583 36.8569 60.531C37.3362 60.3037 37.7056 59.8953 37.8838 59.3956L47.4098 32.7236H43.1618Z"
-                    fill="#DD2E44" />
-                  <path
-                    d="M13.9999 60.7237C13.6593 60.7232 13.3244 60.6357 13.0271 60.4695C12.7298 60.3033 12.4798 60.0639 12.3009 59.7741C12.1221 59.4842 12.0202 59.1535 12.0049 58.8132C11.9897 58.4729 12.0616 58.1344 12.2139 57.8297L18.3379 45.6177C18.3719 45.5617 21.9999 40.0257 21.9999 34.7237C21.9999 28.2397 17.4139 26.6377 17.3679 26.6217C17.1155 26.5412 16.8817 26.4114 16.6799 26.2398C16.4782 26.0681 16.3125 25.8582 16.1926 25.622C16.0726 25.3858 16.0008 25.1282 15.9812 24.8641C15.9616 24.5999 15.9947 24.3345 16.0786 24.0833C16.1624 23.832 16.2953 23.5999 16.4696 23.4004C16.6439 23.201 16.856 23.0381 17.0937 22.9213C17.3315 22.8045 17.59 22.7361 17.8544 22.72C18.1188 22.7039 18.3837 22.7405 18.6339 22.8277C18.9339 22.9277 25.9999 25.3897 25.9999 34.7237C25.9999 40.8597 22.3279 46.8077 21.7379 47.7177L15.7899 59.6157C15.6246 59.949 15.3693 60.2294 15.053 60.4252C14.7367 60.621 14.3719 60.7244 13.9999 60.7237Z"
-                    fill="#DD2E44" />
-                  <path
-                    d="M29.2239 28.0496C29.1133 28.0501 29.0029 28.0408 28.8939 28.0216L16.8939 26.0216C16.3706 25.9343 15.9035 25.6428 15.5951 25.2111C15.2868 24.7794 15.1627 24.2429 15.2499 23.7196C15.3372 23.1963 15.6287 22.7291 16.0604 22.4208C16.4921 22.1125 17.0286 21.9883 17.5519 22.0756L29.5519 24.0756C30.0485 24.1564 30.4963 24.4214 30.8062 24.8178C31.116 25.2142 31.2651 25.7127 31.2238 26.2141C31.1824 26.7155 30.9535 27.1829 30.5829 27.5231C30.2122 27.8633 29.727 28.0513 29.2239 28.0496ZM52.7659 34.7236C52.7064 34.7236 52.6469 34.7196 52.5879 34.7116L41.2439 33.2956C40.8749 33.2649 40.5325 33.0909 40.2903 32.8109C40.048 32.5308 39.9251 32.167 39.9478 31.7974C39.9706 31.4278 40.1372 31.0819 40.412 30.8336C40.6868 30.5854 41.0479 30.4547 41.4179 30.4696C41.4999 30.4696 49.5519 30.4336 53.3959 27.8716C53.6422 27.7085 53.933 27.6259 54.2282 27.6353C54.5234 27.6446 54.8084 27.7453 55.0439 27.9236C55.2777 28.1039 55.4497 28.3524 55.5361 28.6348C55.6224 28.9171 55.6189 29.2193 55.5259 29.4996L54.1079 33.7536C54.0151 34.0361 53.8353 34.2821 53.5943 34.4563C53.3533 34.6306 53.0633 34.7241 52.7659 34.7236Z"
-                    fill="#292F33" />
-                  <path
-                    d="M40 58.7236C40 59.7845 39.5786 60.8019 38.8284 61.5521C38.0783 62.3022 37.0609 62.7236 36 62.7236C34.9391 62.7236 33.9217 62.3022 33.1716 61.5521C32.4214 60.8019 32 59.7845 32 58.7236C32 57.6628 32.4214 56.6454 33.1716 55.8952C33.9217 55.1451 34.9391 54.7236 36 54.7236C37.0609 54.7236 38.0783 55.1451 38.8284 55.8952C39.5786 56.6454 40 57.6628 40 58.7236Z"
-                    fill="#66757F" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_618_258">
-                    <rect width="72" height="72" fill="white" transform="translate(0 0.723633)" />
-                  </clipPath>
-                </defs>
-              </svg>
+        </header>
+      </main>
 
+      <section class="section_app center-children--bg">
+        <div class="section_app-wrapper">
+          <div class="section_app-content">
+            <h2 class="heading-primary sm">
+              One app.<br />
+              One banking.
+            </h2>
 
-            </div>
-          </div>
-          <div class="text_wrapper">
-            <p class="icon--description">Dream bike</p>
-            <p class="price">200$</p>
-          </div>
-        </div>
-        <div class="features__slides--box">
-          <div class="icon-wrapper card-3">
-            <div class="icon">
-              <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_618_271)">
-                  <path
-                    d="M46.6669 37.7893C46.5228 37.9343 46.3514 38.0493 46.1627 38.1278C45.9739 38.2063 45.7715 38.2467 45.5671 38.2467C45.3627 38.2467 45.1603 38.2063 44.9716 38.1278C44.7828 38.0493 44.6115 37.9343 44.4673 37.7893L42.2678 35.5898C42.1228 35.4456 42.0078 35.2743 41.9293 35.0855C41.8508 34.8968 41.8104 34.6944 41.8104 34.49C41.8104 34.2856 41.8508 34.0832 41.9293 33.8944C42.0078 33.7057 42.1228 33.5343 42.2678 33.3902L46.6669 28.9911C46.8112 28.8465 46.9826 28.7318 47.1714 28.6535C47.3601 28.5753 47.5624 28.535 47.7667 28.535C47.971 28.535 48.1732 28.5753 48.362 28.6535C48.5507 28.7318 48.7221 28.8465 48.8664 28.9911L51.066 31.1906C51.2109 31.3348 51.326 31.5061 51.4045 31.6949C51.483 31.8836 51.5234 32.086 51.5234 32.2904C51.5234 32.4948 51.483 32.6972 51.4045 32.886C51.326 33.0747 51.2109 33.2461 51.066 33.3902L46.6669 37.7893ZM23.3335 14.456C23.1894 14.6009 23.0181 14.716 22.8293 14.7945C22.6406 14.873 22.4382 14.9134 22.2338 14.9134C22.0294 14.9134 21.827 14.873 21.6382 14.7945C21.4495 14.716 21.2781 14.6009 21.134 14.456L18.9344 12.2564C18.7895 12.1123 18.6745 11.9409 18.596 11.7522C18.5175 11.5634 18.4771 11.3611 18.4771 11.1566C18.4771 10.9522 18.5175 10.7498 18.596 10.5611C18.6745 10.3724 18.7895 10.201 18.9344 10.0569L23.3335 5.65775C23.4779 5.51317 23.6493 5.39847 23.838 5.3202C24.0267 5.24194 24.229 5.20166 24.4333 5.20166C24.6376 5.20166 24.8399 5.24194 25.0286 5.3202C25.2173 5.39847 25.3888 5.51317 25.5331 5.65775L27.7327 7.85731C27.8776 8.00143 27.9926 8.1728 28.0711 8.36154C28.1496 8.55028 28.19 8.75267 28.19 8.95708C28.19 9.1615 28.1496 9.36389 28.0711 9.55263C27.9926 9.74137 27.8776 9.91273 27.7327 10.0569L23.3335 14.456Z"
-                    fill="#66757F" />
-                  <path
-                    d="M3.11102 34.9459C6.22213 34.9459 20.2221 36.5015 20.2221 36.5015C20.2221 36.5015 21.7777 50.5015 21.7777 53.6126C21.7777 56.7237 18.6666 56.7237 17.111 55.1681C15.5555 53.6126 10.8888 45.8348 10.8888 45.8348C10.8888 45.8348 3.11102 41.1681 1.55546 39.6126C-9.07779e-05 38.057 -9.07779e-05 34.9459 3.11102 34.9459ZM6.22213 10.1177C10.8888 10.057 45.111 11.6126 45.111 11.6126C45.111 11.6126 46.5484 45.8348 46.6075 50.5015C46.6666 55.1681 42.3095 56.7268 40.5999 50.503C38.8904 44.2793 32.6666 24.057 32.6666 24.057C32.6666 24.057 10.9588 17.1861 6.21435 16.1206C-9.10163e-05 14.7237 1.55391 10.1768 6.22213 10.1177Z"
-                    fill="#55ACEE" />
-                  <path
-                    d="M41.9998 5.39031C45.1109 2.2792 52.8887 0.723642 54.4442 2.2792C55.9998 3.83475 54.4442 11.6125 51.3331 14.7236C48.222 17.8348 21.7776 42.7236 21.7776 42.7236C21.7776 42.7236 11.6665 49.7236 9.33312 47.3903C6.99979 45.057 13.9998 34.9459 13.9998 34.9459C13.9998 34.9459 38.8887 8.50142 41.9998 5.39031Z"
-                    fill="#CCD6DD" />
-                  <path
-                    d="M21.7777 34.9459C21.7777 34.9459 22.5554 35.7237 15.5554 42.7237C8.55544 49.7237 7.77766 48.9459 7.77766 48.9459C7.77766 48.9459 6.99989 48.1682 13.9999 41.1682C20.9999 34.1682 21.7777 34.9459 21.7777 34.9459ZM45.111 6.94594C46.3487 6.94594 47.5357 7.4376 48.4108 8.31277C49.286 9.18794 49.7777 10.3749 49.7777 11.6126H51.0299C51.2072 11.1226 51.3332 10.6093 51.3332 10.057C51.3332 8.81937 50.8416 7.63239 49.9664 6.75722C49.0912 5.88205 47.9042 5.39038 46.6666 5.39038C46.1143 5.39038 45.601 5.51638 45.111 5.69371V6.94594Z"
-                    fill="#66757F" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_618_271">
-                    <rect width="56" height="56" fill="white" transform="translate(0 0.723633)" />
-                  </clipPath>
-                </defs>
-              </svg>
-
-            </div>
-          </div>
-          <div class="text_wrapper">
-            <p class="icon--description">Holiday</p>
-            <p class="price">14000$</p>
-          </div>
-        </div>
-        <div class="features__slides--box">
-          <div class="icon-wrapper card-4">
-            <div class="icon">
-              <svg width="54" height="55" viewBox="0 0 54 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_618_310)">
-                  <path
-                    d="M0 15.7236C0 15.7236 0 9.72363 6 9.72363H48C48 9.72363 54 9.72363 54 15.7236V42.7236C54 42.7236 54 48.7236 48 48.7236H6C6 48.7236 0 48.7236 0 42.7236V15.7236Z"
-                    fill="#31373D" />
-                  <path
-                    d="M31.5 44.2236C39.7843 44.2236 46.5 37.5079 46.5 29.2236C46.5 20.9394 39.7843 14.2236 31.5 14.2236C23.2157 14.2236 16.5 20.9394 16.5 29.2236C16.5 37.5079 23.2157 44.2236 31.5 44.2236Z"
-                    fill="#CCD6DD" />
-                  <path
-                    d="M31.5 41.2236C38.1274 41.2236 43.5 35.851 43.5 29.2236C43.5 22.5962 38.1274 17.2236 31.5 17.2236C24.8726 17.2236 19.5 22.5962 19.5 29.2236C19.5 35.851 24.8726 41.2236 31.5 41.2236Z"
-                    fill="#31373D" />
-                  <path
-                    d="M31.5 36.7236C35.6421 36.7236 39 33.3658 39 29.2236C39 25.0815 35.6421 21.7236 31.5 21.7236C27.3579 21.7236 24 25.0815 24 29.2236C24 33.3658 27.3579 36.7236 31.5 36.7236Z"
-                    fill="#3B88C3" />
-                  <path
-                    d="M48.75 17.2236C49.9926 17.2236 51 16.2163 51 14.9736C51 13.731 49.9926 12.7236 48.75 12.7236C47.5074 12.7236 46.5 13.731 46.5 14.9736C46.5 16.2163 47.5074 17.2236 48.75 17.2236Z"
-                    fill="white" />
-                  <path
-                    d="M24 14.2236L28.5 5.22363L19.5 8.22363L13.5 0.723633L10.5 8.22363L1.5 6.72363L7.5 15.7236L0 21.7236H9L6 30.7236L15 26.2236L24 33.7236L22.5 21.7236L31.5 20.2236L24 14.2236Z"
-                    fill="#FFAC33" />
-                  <path
-                    d="M15 21.7236L10.5 24.7236L12 20.2236L7.5 18.7236L12 15.7236L7.5 11.2236H13.5L15 6.72363L18 11.2236L22.5 9.72363L19.5 14.2236L24 18.7236L19.5 20.2236L21 26.2236L15 21.7236Z"
-                    fill="white" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_618_310">
-                    <rect width="54" height="54" fill="white" transform="translate(0 0.723633)" />
-                  </clipPath>
-                </defs>
-              </svg>
-
-
-            </div>
-          </div>
-          <div class="text_wrapper">
-            <p class="icon--description">Camera</p>
-            <p class="price">100$</p>
-          </div>
-        </div>
-        <div class="features__slides--box">
-          <div class="icon-wrapper card-5">
-            <div class="icon">
-              <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect y="0.723633" width="40" height="40" rx="20" fill="#1A191E" />
-                <path d="M19 19.7236V13.7236H21V19.7236H27V21.7236H21V27.7236H19V21.7236H13V19.7236H19Z" fill="white" />
-              </svg>
-
-
+            <div class="app-content--wrapper">
+              <div class="app-content--box">
+                <div class="app-content--icon">
+                  <img src="/assets/icons/flash.svg" alt="flash-icon" />
+                </div>
+                <p class="paragraph bg">Instant transactions</p>
+                <p class="paragraph sm">
+                  Odio euismod lacinia at quis. Amet purus gravida quis blandit
+                  turpis.
+                </p>
+              </div>
+              <div class="app-content--box">
+                <div class="app-content--icon">
+                  <img src="/assets/icons/saving.svg" alt="flash-icon" />
+                </div>
+                <p class="paragraph bg">Saving accounts</p>
+                <p class="paragraph sm">
+                  Odio euismod lacinia at quis. Amet purus gravida quis blandit
+                  turpis.
+                </p>
+              </div>
+              <div class="app-content--box">
+                <div class="app-content--icon">
+                  <img src="/assets/icons/mobile.svg" alt="flash-icon" />
+                </div>
+                <p class="paragraph bg">Mobile banking</p>
+                <p class="paragraph sm">
+                  Odio euismod lacinia at quis. Amet purus gravida quis blandit
+                  turpis.
+                </p>
+              </div>
+              <div class="app-content--box">
+                <div class="app-content--icon">
+                  <img src="/assets/icons/statics.svg" alt="flash-icon" />
+                </div>
+                <p class="paragraph bg">Advanced statistics</p>
+                <p class="paragraph sm">
+                  Odio euismod lacinia at quis. Amet purus gravida quis blandit
+                  turpis.
+                </p>
+              </div>
+              <div class="app-content--box">
+                <div class="app-content--icon">
+                  <img src="/assets/icons/card.svg" alt="flash-icon" />
+                </div>
+                <p class="paragraph bg">Virtual cards</p>
+                <p class="paragraph sm">
+                  Odio euismod lacinia at quis. Amet purus gravida quis blandit
+                  turpis.
+                </p>
+              </div>
+              <div class="app-content--box">
+                <div class="app-content--icon">
+                  <img src="/assets/icons/wifi.svg" alt="flash-icon" />
+                </div>
+                <p class="paragraph bg">Contactless payments</p>
+                <p class="paragraph sm">
+                  Odio euismod lacinia at quis. Amet purus gravida quis blandit
+                  turpis.
+                </p>
+              </div>
             </div>
           </div>
 
-        </div>
-      </div>
-      </div>
-    </section>
-    <section class="Notification">
-      <div class="Notification__textbox">
-        <span class="section__intro">Notification</span>
-        <h2 class="heading-tertiary">Stay notified</h2>
-        <p class="description">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
-          velit mollit. Exercitation veniam consequat sunt nostrud amet.
-        </p>
-        <ul class="notify">
-          <li class="Notification_list">
-            <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.643799" width="26" height="26" rx="13" fill="#E8F2EE" />
-              <path
-                d="M11.5001 16.0227L18.3941 9.12793L19.4553 10.1884L11.5001 18.1437L6.72705 13.3707L7.78755 12.3102L11.5001 16.0227Z"
-                fill="#5BB5A2" />
-            </svg>
-
-            <span class="Notification-text">Malesuada Ipsum</span>
-          </li>
-          <li class="Notification_list">
-            <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.643799" width="26" height="26" rx="13" fill="#E8F2EE" />
-              <path
-                d="M11.5001 16.0227L18.3941 9.12793L19.4553 10.1884L11.5001 18.1437L6.72705 13.3707L7.78755 12.3102L11.5001 16.0227Z"
-                fill="#5BB5A2" />
-            </svg>
-
-            <span class="Notification-text">Vestibulum</span>
-          </li>
-          <li class="Notification_list">
-            <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.643799" width="26" height="26" rx="13" fill="#E8F2EE" />
-              <path
-                d="M11.5001 16.0227L18.3941 9.12793L19.4553 10.1884L11.5001 18.1437L6.72705 13.3707L7.78755 12.3102L11.5001 16.0227Z"
-                fill="#5BB5A2" />
-            </svg>
-
-            <span class="Notification-text">Parturient Lorem</span>
-          </li>
-        </ul>
-        <button class="button">
-          <span class="content">All Features</span>
-          <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M13.2286 6.73183L7.79209 1.41128L9.2252 0.00873375L17.1083 7.72373L9.2252 15.4387L7.79209 14.0362L13.2286 8.71563H0.89209L0.89209 6.73183H13.2286Z"
-              fill="#5BB5A2" />
-          </svg>
-        </button>
-      </div>
-      <div class="Notification__main">
-        <div class="Notification__main--box">
-          <figure>
-            <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.24707" y="0.723633" width="50" height="50" rx="10" fill="#5BB5A2" />
-              <path
-                d="M22.3626 38.1925C21.0908 38.1925 19.9779 37.9541 19.024 37.4771C18.0701 37.0002 17.2979 36.3302 16.7074 35.4671L16.2304 37.7837H12.3467V13.2549H16.7074V23.3049C17.2524 22.5554 17.9679 21.8968 18.8536 21.329C19.7621 20.7612 20.9318 20.4773 22.3626 20.4773C23.9525 20.4773 25.3719 20.8634 26.6211 21.6356C27.8703 22.4078 28.8582 23.4639 29.585 24.8039C30.3118 26.1439 30.6752 27.6656 30.6752 29.369C30.6752 31.0724 30.3118 32.5941 29.585 33.9341C28.8582 35.2513 27.8703 36.2961 26.6211 37.0683C25.3719 37.8178 23.9525 38.1925 22.3626 38.1925ZM21.4428 34.3769C22.8282 34.3769 23.9752 33.9113 24.8836 32.9802C25.7921 32.049 26.2464 30.8452 26.2464 29.369C26.2464 27.8927 25.7921 26.6776 24.8836 25.7237C23.9752 24.7698 22.8282 24.2929 21.4428 24.2929C20.0347 24.2929 18.8763 24.7698 17.9679 25.7237C17.0821 26.6549 16.6392 27.8586 16.6392 29.3349C16.6392 30.8112 17.0821 32.0263 17.9679 32.9802C18.8763 33.9113 20.0347 34.3769 21.4428 34.3769Z"
-                fill="white" />
-              <path
-                d="M35.4223 38.0222C34.6274 38.0222 33.9688 37.7724 33.4464 37.2727C32.9467 36.773 32.6969 36.1712 32.6969 35.4671C32.6969 34.7403 32.9467 34.1271 33.4464 33.6274C33.9688 33.1278 34.6274 32.878 35.4223 32.878C36.2172 32.878 36.8645 33.1278 37.3642 33.6274C37.8866 34.1271 38.1477 34.7403 38.1477 35.4671C38.1477 36.1712 37.8866 36.773 37.3642 37.2727C36.8645 37.7724 36.2172 38.0222 35.4223 38.0222Z"
-                fill="white" />
-            </svg>
-
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Banko.</span>
-            <span class="transact-descript">You made a 49$ purchase at Amazon!</span>
+          <div class="section_app-image">
+            <figure class="app-image--app">
+              <img src="/assets/images/app.png" alt="app-image" />
+            </figure>
           </div>
         </div>
-        <div class="Notification__main--box">
-          <figure>
-            <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.24707" y="0.723633" width="50" height="50" rx="10" fill="#5BB5A2" />
-              <path
-                d="M22.3626 38.1925C21.0908 38.1925 19.9779 37.9541 19.024 37.4771C18.0701 37.0002 17.2979 36.3302 16.7074 35.4671L16.2304 37.7837H12.3467V13.2549H16.7074V23.3049C17.2524 22.5554 17.9679 21.8968 18.8536 21.329C19.7621 20.7612 20.9318 20.4773 22.3626 20.4773C23.9525 20.4773 25.3719 20.8634 26.6211 21.6356C27.8703 22.4078 28.8582 23.4639 29.585 24.8039C30.3118 26.1439 30.6752 27.6656 30.6752 29.369C30.6752 31.0724 30.3118 32.5941 29.585 33.9341C28.8582 35.2513 27.8703 36.2961 26.6211 37.0683C25.3719 37.8178 23.9525 38.1925 22.3626 38.1925ZM21.4428 34.3769C22.8282 34.3769 23.9752 33.9113 24.8836 32.9802C25.7921 32.049 26.2464 30.8452 26.2464 29.369C26.2464 27.8927 25.7921 26.6776 24.8836 25.7237C23.9752 24.7698 22.8282 24.2929 21.4428 24.2929C20.0347 24.2929 18.8763 24.7698 17.9679 25.7237C17.0821 26.6549 16.6392 27.8586 16.6392 29.3349C16.6392 30.8112 17.0821 32.0263 17.9679 32.9802C18.8763 33.9113 20.0347 34.3769 21.4428 34.3769Z"
-                fill="white" />
-              <path
-                d="M35.4223 38.0222C34.6274 38.0222 33.9688 37.7724 33.4464 37.2727C32.9467 36.773 32.6969 36.1712 32.6969 35.4671C32.6969 34.7403 32.9467 34.1271 33.4464 33.6274C33.9688 33.1278 34.6274 32.878 35.4223 32.878C36.2172 32.878 36.8645 33.1278 37.3642 33.6274C37.8866 34.1271 38.1477 34.7403 38.1477 35.4671C38.1477 36.1712 37.8866 36.773 37.3642 37.2727C36.8645 37.7724 36.2172 38.0222 35.4223 38.0222Z"
-                fill="white" />
-            </svg>
+      </section>
 
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Banko.</span>
-            <span class="transact-descript">You made a 49$ purchase at Amazon!</span>
+      <section class="section_send">
+        <div class="section_send-wrapper center-children--bg">
+          <div class="section_send-content">
+            <h2 class="heading-secondary">
+              Send & receive <br />
+              money instantly
+            </h2>
+
+            <p class="paragraph bg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et.
+            </p>
+
+            <ul class="section_send-list">
+              <li class="section_send-list--item">
+                <figure class="list--icon">
+                  <img
+                    src="/assets/icons/checkmark-white.svg"
+                    alt="checkmark" />
+                </figure>
+                <span class="list--text">Malesuada Ipsum</span>
+              </li>
+              <li class="section_send-list--item">
+                <figure class="list--icon">
+                  <img
+                    src="/assets/icons/checkmark-white.svg"
+                    alt="checkmark" />
+                </figure>
+                <span class="list--text">Vestibulum</span>
+              </li>
+              <li class="section_send-list--item">
+                <figure class="list--icon">
+                  <img
+                    src="/assets/icons/checkmark-white.svg"
+                    alt="checkmark" />
+                </figure>
+                <span class="list--text">Parturient Lorem </span>
+              </li>
+            </ul>
+          </div>
+          <div class="section_send-dashboard">
+            <div class="dashboard-content">
+              <div class="dashboard-box">
+                <div class="box_info">
+                  <div class="box_info--name">
+                    <img
+                      src="/assets/icons/apple-green.svg"
+                      alt=" apple-green logo" />
+
+                    <div class="box_text">
+                      <p class="paragraph md">Apple Pay</p>
+                      <p class="paragraph sm">Macbook</p>
+                    </div>
+                  </div>
+
+                  <div class="box_amount">
+                    <p class="paragraph mb">-999€</p>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-box">
+                <div class="box_info">
+                  <div class="box_info--name">
+                    <img
+                      src="/assets/icons/apple-green.svg"
+                      alt=" apple-green logo" />
+
+                    <div class="box_text">
+                      <p class="paragraph md">Amazon</p>
+                      <p class="paragraph sm">Electronics</p>
+                    </div>
+                  </div>
+
+                  <div class="box_amount">
+                    <p class="paragraph mb">-49€</p>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-box">
+                <div class="box_info">
+                  <div class="box_info--name">
+                    <img
+                      src="/assets/icons/apple-green.svg"
+                      alt=" apple-green logo" />
+
+                    <div class="box_text">
+                      <p class="paragraph md">Twitter</p>
+                      <p class="paragraph sm">Ads</p>
+                    </div>
+                  </div>
+
+                  <div class="box_amount">
+                    <p class="paragraph mb">-29€</p>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-box">
+                <div class="box_info">
+                  <div class="box_info--name">
+                    <img
+                      src="/assets/icons/apple-green.svg"
+                      alt=" apple-green logo" />
+
+                    <div class="box_text">
+                      <p class="paragraph md">Microsoft</p>
+                      <p class="paragraph sm">Office Suite</p>
+                    </div>
+                  </div>
+
+                  <div class="box_amount">
+                    <p class="paragraph mb">-149€</p>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-box">
+                <div class="box_info">
+                  <div class="box_info--name">
+                    <img
+                      src="/assets/icons/apple-green.svg"
+                      alt=" apple-green logo" />
+
+                    <div class="box_text">
+                      <p class="paragraph md">Dropbox</p>
+                      <p class="paragraph sm">Cloud</p>
+                    </div>
+                  </div>
+
+                  <div class="box_amount">
+                    <p class="paragraph mb">-14€</p>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-box">
+                <div class="box_info">
+                  <div class="box_info--name">
+                    <img
+                      src="/assets/icons/apple-green.svg"
+                      alt=" apple-green logo" />
+
+                    <div class="box_text">
+                      <p class="paragraph md">Paypal</p>
+                      <p class="paragraph sm">Bills</p>
+                    </div>
+                  </div>
+
+                  <div class="box_amount">
+                    <p class="paragraph mb">-200€</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="Notification__main--box">
-          <figure>
-            <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.24707" y="0.723633" width="50" height="50" rx="10" fill="#5BB5A2" />
-              <path
-                d="M22.3626 38.1925C21.0908 38.1925 19.9779 37.9541 19.024 37.4771C18.0701 37.0002 17.2979 36.3302 16.7074 35.4671L16.2304 37.7837H12.3467V13.2549H16.7074V23.3049C17.2524 22.5554 17.9679 21.8968 18.8536 21.329C19.7621 20.7612 20.9318 20.4773 22.3626 20.4773C23.9525 20.4773 25.3719 20.8634 26.6211 21.6356C27.8703 22.4078 28.8582 23.4639 29.585 24.8039C30.3118 26.1439 30.6752 27.6656 30.6752 29.369C30.6752 31.0724 30.3118 32.5941 29.585 33.9341C28.8582 35.2513 27.8703 36.2961 26.6211 37.0683C25.3719 37.8178 23.9525 38.1925 22.3626 38.1925ZM21.4428 34.3769C22.8282 34.3769 23.9752 33.9113 24.8836 32.9802C25.7921 32.049 26.2464 30.8452 26.2464 29.369C26.2464 27.8927 25.7921 26.6776 24.8836 25.7237C23.9752 24.7698 22.8282 24.2929 21.4428 24.2929C20.0347 24.2929 18.8763 24.7698 17.9679 25.7237C17.0821 26.6549 16.6392 27.8586 16.6392 29.3349C16.6392 30.8112 17.0821 32.0263 17.9679 32.9802C18.8763 33.9113 20.0347 34.3769 21.4428 34.3769Z"
-                fill="white" />
-              <path
-                d="M35.4223 38.0222C34.6274 38.0222 33.9688 37.7724 33.4464 37.2727C32.9467 36.773 32.6969 36.1712 32.6969 35.4671C32.6969 34.7403 32.9467 34.1271 33.4464 33.6274C33.9688 33.1278 34.6274 32.878 35.4223 32.878C36.2172 32.878 36.8645 33.1278 37.3642 33.6274C37.8866 34.1271 38.1477 34.7403 38.1477 35.4671C38.1477 36.1712 37.8866 36.773 37.3642 37.2727C36.8645 37.7724 36.2172 38.0222 35.4223 38.0222Z"
-                fill="white" />
-            </svg>
+      </section>
 
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Banko.</span>
-            <span class="transact-descript">You made a 49$ purchase at Amazon!</span>
+      <section class="section_organize center-children--bg">
+        <div class="section_organize-wrapper">
+          <div class="section_organize-content">
+            <div class="content-textbox">
+              <div class="content-text">
+                <p class="paragraph bg">Saving Accounts</p>
+                <h2 class="heading-secondary">
+                  Organize your <br />
+                  money the right way
+                </h2>
+                <p class="paragraph bg">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div class="content-btn">
+                <a href="#" class="cta color-tx">All Features</a>
+                <img
+                  src="/assets/icons/arrow-right-green.svg"
+                  alt="arrow-right-green-icon" />
+              </div>
+            </div>
+
+            <div class="content_gallery">
+              <div class="content_gallery-box">
+                <div class="box-img box-1">
+                  <img src="/assets/icons/laptop.svg" alt="laptop-icon " />
+                </div>
+
+                <div class="box-text">
+                  <p class="paragraph bg">New Laptop</p>
+                  <p class="paragraph rm">400$</p>
+                </div>
+              </div>
+              <div class="content_gallery-box">
+                <div class="box-img box-2">
+                  <img src="/assets/icons/bicycle.svg" alt="bicycle-icon " />
+                </div>
+
+                <div class="box-text">
+                  <p class="paragraph bg">Dream bike</p>
+                  <p class="paragraph rm">200$</p>
+                </div>
+              </div>
+              <div class="content_gallery-box">
+                <div class="box-img box-3">
+                  <img src="/assets/icons/airplane.svg" alt="airplane-icon " />
+                </div>
+
+                <div class="box-text">
+                  <p class="paragraph bg">Holiday</p>
+                  <p class="paragraph rm">14000$</p>
+                </div>
+              </div>
+              <div class="content_gallery-box">
+                <div class="box-img box-4">
+                  <img src="/assets/icons/camera.svg" alt="camera-icon " />
+                </div>
+
+                <div class="box-text">
+                  <p class="paragraph bg">Camera</p>
+                  <p class="paragraph rm">100$</p>
+                </div>
+              </div>
+              <div class="content_gallery-box">
+                <div class="box-img box-5">
+                  <img src="/assets/icons/add-icon.svg" alt="add-icon " />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_notified center-children--bg">
+        <div class="section_notified-wrapper">
+          <div class="section_notified-content">
+            <p class="paragraph bg">Notifications</p>
+            <h2 class="heading-secondary">Stay notified</h2>
+
+            <p class="paragraph md">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+
+            <ul class="section_notified-list">
+              <li class="section_notified-list--item">
+                <figure class="list--icon">
+                  <img
+                    src="/assets/icons/checkmark-green.svg"
+                    alt="checkmark" />
+                </figure>
+                <span class="list--text">Malesuada Ipsum</span>
+              </li>
+              <li class="section_notified-list--item">
+                <figure class="list--icon">
+                  <img
+                    src="/assets/icons/checkmark-green.svg"
+                    alt="checkmark" />
+                </figure>
+                <span class="list--text">Vestibulum</span>
+              </li>
+              <li class="section_notified-list--item">
+                <figure class="list--icon">
+                  <img
+                    src="/assets/icons/checkmark-green.svg"
+                    alt="checkmark" />
+                </figure>
+                <span class="list--text">Parturient Lorem </span>
+              </li>
+            </ul>
+
+            <div class="content-btn">
+              <a href="#" class="cta color-tx">Compare cards</a>
+              <img
+                src="/assets/icons/arrow-right-green.svg"
+                alt="arrow-right-green-icon" />
+            </div>
           </div>
 
-        </div>
-        <div class="Notification__main--box">
-          <figure>
-            <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.24707" y="0.723633" width="50" height="50" rx="10" fill="#5BB5A2" />
-              <path
-                d="M22.3626 38.1925C21.0908 38.1925 19.9779 37.9541 19.024 37.4771C18.0701 37.0002 17.2979 36.3302 16.7074 35.4671L16.2304 37.7837H12.3467V13.2549H16.7074V23.3049C17.2524 22.5554 17.9679 21.8968 18.8536 21.329C19.7621 20.7612 20.9318 20.4773 22.3626 20.4773C23.9525 20.4773 25.3719 20.8634 26.6211 21.6356C27.8703 22.4078 28.8582 23.4639 29.585 24.8039C30.3118 26.1439 30.6752 27.6656 30.6752 29.369C30.6752 31.0724 30.3118 32.5941 29.585 33.9341C28.8582 35.2513 27.8703 36.2961 26.6211 37.0683C25.3719 37.8178 23.9525 38.1925 22.3626 38.1925ZM21.4428 34.3769C22.8282 34.3769 23.9752 33.9113 24.8836 32.9802C25.7921 32.049 26.2464 30.8452 26.2464 29.369C26.2464 27.8927 25.7921 26.6776 24.8836 25.7237C23.9752 24.7698 22.8282 24.2929 21.4428 24.2929C20.0347 24.2929 18.8763 24.7698 17.9679 25.7237C17.0821 26.6549 16.6392 27.8586 16.6392 29.3349C16.6392 30.8112 17.0821 32.0263 17.9679 32.9802C18.8763 33.9113 20.0347 34.3769 21.4428 34.3769Z"
-                fill="white" />
-              <path
-                d="M35.4223 38.0222C34.6274 38.0222 33.9688 37.7724 33.4464 37.2727C32.9467 36.773 32.6969 36.1712 32.6969 35.4671C32.6969 34.7403 32.9467 34.1271 33.4464 33.6274C33.9688 33.1278 34.6274 32.878 35.4223 32.878C36.2172 32.878 36.8645 33.1278 37.3642 33.6274C37.8866 34.1271 38.1477 34.7403 38.1477 35.4671C38.1477 36.1712 37.8866 36.773 37.3642 37.2727C36.8645 37.7724 36.2172 38.0222 35.4223 38.0222Z"
-                fill="white" />
-            </svg>
+          <div class="section_notified-dashboard">
+            <div class="dashboard-content">
+              <div class="dashboard-box">
+                <div class="box_info">
+                  <div class="box_info--name">
+                    <img
+                      src="/assets/icons/banquee--app-icon.png"
+                      alt=" apple-green logo" />
 
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Banko.</span>
-            <span class="transact-descript">You made a 49$ purchase at Amazon!</span>
+                    <div class="box_text">
+                      <p class="paragraph md">Banko.</p>
+                      <p class="paragraph sm">
+                        You payment of 49€ has been processed!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-box">
+                <div class="box_info">
+                  <div class="box_info--name">
+                    <img
+                      src="/assets/icons/banquee--app-icon.png"
+                      alt=" apple-green logo" />
+
+                    <div class="box_text">
+                      <p class="paragraph md">Banko.</p>
+                      <p class="paragraph sm">You got a new support message!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-box">
+                <div class="box_info">
+                  <div class="box_info--name">
+                    <img
+                      src="/assets/icons/banquee--app-icon.png"
+                      alt=" apple-green logo" />
+
+                    <div class="box_text">
+                      <p class="paragraph md">Banko.</p>
+                      <p class="paragraph sm">You payment was declined!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-box">
+                <div class="box_info">
+                  <div class="box_info--name">
+                    <img
+                      src="/assets/icons/banquee--app-icon.png"
+                      alt=" apple-green logo" />
+
+                    <div class="box_text">
+                      <p class="paragraph md">Banko.</p>
+                      <p class="paragraph sm">
+                        Please verify your payment of 99€!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-box">
+                <div class="box_info">
+                  <div class="box_info--name">
+                    <img
+                      src="/assets/icons/banquee--app-icon.png"
+                      alt=" apple-green logo" />
+
+                    <div class="box_text">
+                      <p class="paragraph md">Banko.</p>
+                      <p class="paragraph sm">
+                        New account statistics are available!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="Notification__main--box">
-          <figure>
-            <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.24707" y="0.723633" width="50" height="50" rx="10" fill="#5BB5A2" />
-              <path
-                d="M22.3626 38.1925C21.0908 38.1925 19.9779 37.9541 19.024 37.4771C18.0701 37.0002 17.2979 36.3302 16.7074 35.4671L16.2304 37.7837H12.3467V13.2549H16.7074V23.3049C17.2524 22.5554 17.9679 21.8968 18.8536 21.329C19.7621 20.7612 20.9318 20.4773 22.3626 20.4773C23.9525 20.4773 25.3719 20.8634 26.6211 21.6356C27.8703 22.4078 28.8582 23.4639 29.585 24.8039C30.3118 26.1439 30.6752 27.6656 30.6752 29.369C30.6752 31.0724 30.3118 32.5941 29.585 33.9341C28.8582 35.2513 27.8703 36.2961 26.6211 37.0683C25.3719 37.8178 23.9525 38.1925 22.3626 38.1925ZM21.4428 34.3769C22.8282 34.3769 23.9752 33.9113 24.8836 32.9802C25.7921 32.049 26.2464 30.8452 26.2464 29.369C26.2464 27.8927 25.7921 26.6776 24.8836 25.7237C23.9752 24.7698 22.8282 24.2929 21.4428 24.2929C20.0347 24.2929 18.8763 24.7698 17.9679 25.7237C17.0821 26.6549 16.6392 27.8586 16.6392 29.3349C16.6392 30.8112 17.0821 32.0263 17.9679 32.9802C18.8763 33.9113 20.0347 34.3769 21.4428 34.3769Z"
-                fill="white" />
-              <path
-                d="M35.4223 38.0222C34.6274 38.0222 33.9688 37.7724 33.4464 37.2727C32.9467 36.773 32.6969 36.1712 32.6969 35.4671C32.6969 34.7403 32.9467 34.1271 33.4464 33.6274C33.9688 33.1278 34.6274 32.878 35.4223 32.878C36.2172 32.878 36.8645 33.1278 37.3642 33.6274C37.8866 34.1271 38.1477 34.7403 38.1477 35.4671C38.1477 36.1712 37.8866 36.773 37.3642 37.2727C36.8645 37.7724 36.2172 38.0222 35.4223 38.0222Z"
-                fill="white" />
-            </svg>
+      </section>
 
-          </figure>
-          <div class="text-descript">
-            <span class="transact-head">Banko.</span>
-            <span class="transact-descript">You made a 49$ purchase at Amazon!</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <section class="tools">
-      <div class="tools--gallery">
-        <div class="tool__wrapper">
-          <figure class="tool">
-            <img src="./assests/svg/Webflow_logo 1.svg" alt="">
-
-          </figure>
-        </div>
-        <div class="tool__wrapper">
-          <figure class="tool">
-            <img src="./assests/svg/Shopify_logo.svg" alt="">
-
-          </figure>
-        </div>
-        <div class="tool__wrapper">
-          <figure class="tool">
-            <img src="./assests/svg/Zapier_logo.svg" alt="">
-
-          </figure>
-        </div>
-        <div class="tool__wrapper">
-          <figure class="tool">
-            <img src="./assests/svg/bitcoin_logo.svg" alt="">
-
-          </figure>
-
-        </div>
-
-
-        <div class="tool__wrapper">
-          <figure class="tool">
-            <img src="./assests/svg/PayPal 1.svg" alt="">
-
-          </figure>
-        </div>
-        <div class="tool__wrapper">
-          <figure class="tool">
-            <img src="./assests/svg/Mastercard-logo.svg" alt="">
-
-          </figure>
-        </div>
-
-        <div class="tool__wrapper">
-          <figure class="tool">
-            <img src="./assests/svg/Visa_2021.svg" alt="">
-
-          </figure>
-        </div>
-        <div class="tool__wrapper">
-          <figure class="tool">
-            <img src="./assests/svg/Google_Pay.svg" alt="">
-
-          </figure>
-        </div>
-        <div class="tool__wrapper">
-          <figure class="tool">
-            <img src="./assests/svg/Apple_Pay_logo.svg" alt="">
-
-          </figure>
-        </div>
-        <div class="tool__wrapper">
-          <figure class="tool">
-            <img src="./assests/svg/Amazon_Pay_logo.svg" alt="">
-
-          </figure>
-        </div>
-      </div>
-      <div class="tools__textbox">
-        <div class="main-text">
-          <span class="section__intro">Tools</span>
-          <h2 class="heading-tertiary">Seemless <br> integration</h2>
-          <p class="description">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
-            velit mollit.
-          </p>
-        </div>
-        <ul class="tool">
-          <li class="tool_list">
-            <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.643799" width="26" height="26" rx="13" fill="#E8F2EE" />
-              <path
-                d="M11.5001 16.0227L18.3941 9.12793L19.4553 10.1884L11.5001 18.1437L6.72705 13.3707L7.78755 12.3102L11.5001 16.0227Z"
-                fill="#5BB5A2" />
-            </svg>
-
-            <span class="tool-text">Secure and encrypted integration</span>
-          </li>
-          <li class="tool_list">
-            <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.
-            org/2000/svg">
-              <rect y="0.643799" width="26" height="26" rx="13" fill="#E8F2EE" />
-              <path
-                d="M11.5001 16.0227L18.3941 9.12793L19.4553 10.1884L11.5001 18.1437L6.72705 13.3707L7.78755 12.3102L11.5001 16.0227Z"
-                fill="#5BB5A2" />
-            </svg>
-
-            <span class="tool-text">Fully API interface</span>
-          </li>
-          <li class="tool_list">
-            <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect y="0.643799" width="26" height="26" rx="13" fill="#E8F2EE" />
-              <path
-                d="M11.5001 16.0227L18.3941 9.12793L19.4553 10.1884L11.5001 18.1437L6.72705 13.3707L7.78755 12.3102L11.5001 16.0227Z"
-                fill="#5BB5A2" />
-            </svg>
-
-            <span class="tool-text">Payments worldwide</span>
-          </li>
-        </ul>
-
-      </div>
-    </section>
-    <section class="account">
-      <div class="account__content">
-        <div class="account__content--textbox">
-          <span class="section__intro">Account</span>
-          <h2 class="heading-secondary">Perfect card <br>for your needs.</h2>
-          <p class="description">
-            Senectus et netus et malesuada fames ac turpis. <br> Sagittis vitae et leo duis ut diam.
-          </p>
-
-        </div>
-        <figure class="cards">
-          <div class="bind--cards">
-            <img class="img-1" src="./assests/img/card-green.png" alt="a green card">
-            <img class="img-2" src="./assests/img/card-black.png" alt="a green card">
-            <img class="img-3" src="./assests/img/card-gold.png" alt="a  gold card">
-          </div>
+      <section class="section_seemless center-children--bg">
+        <figure class="section_seemless-logos">
+          <img src="/assets/icons/Webflow_logo.svg" alt="Webflow-logo" />
+          <img src="/assets/icons/Shopify_logo.svg" alt="Shopify_logo" />
+          <img src="/assets/icons/Zapier_logo.svg" alt="Zapier_logo" />
+          <img src="/assets/icons/bitcoin_logo.svg" alt="bitcoin_logo" />
+          <img src="assets/icons/PayPal.svg" alt="PayPal-logo" />
+          <img src="/assets/icons/Mastercard-logo.svg" alt="Mastercard-logo" />
+          <img src="/assets/icons/Visa.svg" alt="Visa-logo" />
+          <img src="/assets/icons/Google_Pay.svg" alt="Google_Pay" />
+          <img src="/assets/icons/Apple_Pay_logo.svg" alt="Apple_Pay_logo" />
+          <img src="/assets/icons/Amazon_Pay_logo.svg" alt="Amazon_Pay_logo" />
         </figure>
-      </div>
-      <div class="btns">
+        <div class="section_seemless-wrapper">
+          <div class="section_seemless-content">
+            <div class="content-textbox">
+              <div class="content-text">
+                <p class="paragraph bg">Tools</p>
+                <h2 class="heading-secondary">
+                  Seemless <br />
+                  integration
+                </h2>
+                <p class="paragraph md">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
+              </div>
+            </div>
+          </div>
 
-        <button class="btn-2">open account</button>
-        <button class="btn--transparent">Compare Cards</button>
-      </div>
-    </section>
-
-    <section class="testimonal">
-      <div class="sec-header">
-        <div class="content">
-          <span class="section__intro">Testimonials</span>
-          <h3 class="section__heading">People all over the world use banko.</h3>
+          <ul class="section_seemless-list">
+            <li class="section_seemless-list--item">
+              <figure class="list--icon">
+                <img src="/assets/icons/checkmark-green.svg" alt="checkmark" />
+              </figure>
+              <span class="list--text">Malesuada Ipsum</span>
+            </li>
+            <li class="section_seemless-list--item">
+              <figure class="list--icon">
+                <img src="/assets/icons/checkmark-green.svg" alt="checkmark" />
+              </figure>
+              <span class="list--text">Vestibulum</span>
+            </li>
+            <li class="section_seemless-list--item">
+              <figure class="list--icon">
+                <img src="/assets/icons/checkmark-green.svg" alt="checkmark" />
+              </figure>
+              <span class="list--text">Parturient Lorem </span>
+            </li>
+          </ul>
         </div>
-        <p class="description">
-          <img src="assests/svg/star.o.svg" alt=" rated star svg">
+      </section>
 
-          <span>Rated 4.8/5 from over 1000 users</span>
-        </p>
-      </div>
+      <section class="section_card center-children--bg">
+        <div class="section_card-wrapper">
+          <div class="section_card-content">
+            <div class="content-textbox">
+              <div class="content-text">
+                <p class="paragraph bg">Account</p>
+                <h2 class="heading-primary sm">
+                  Perfect card <br />
+                  for your needs.
+                </h2>
+                <p class="paragraph bg">
+                  Senectus et netus et malesuada fames ac turpis. Sagittis vitae
+                  et leo duis ut diam.
+                </p>
+              </div>
+            </div>
 
-      <div class="test-grid">
-        <div class="testimonials">
-          <div class="content">
-            <figure class="rating">
-              <img src="/assests/svg/rating.svg" alt="5 star rating">
+            <figure class="content-images">
+              <img
+                class="img-1"
+                src="/assets/images/card-green.png"
+                alt="card-green" />
+
+              <img
+                class="img-2"
+                src="/assets/images/card-black.png"
+                alt="card-green" />
+
+              <img
+                class="img-3"
+                src="/assets/images/card-gold.png"
+                alt="card-green" />
             </figure>
 
-            <p class="texthead">
-              Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.
-            </p>
-            <div class="namebx">
-              <p class="test-name">Cody Fisher</p>
-              <p class="test-job">Medical Assistant</p>
+            <div class="content-btns">
+              <button class="btn-2">Open Account</button>
+              <button class="btn--transparent">Compare Cards</button>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-  </main>
-</body>
+      <section class="section_rating center-children--bg">
+        <div class="section_rating-wrapper">
+          <div class="section_rating-content">
+            <div class="content-textbox">
+              <div class="content-text">
+                <p class="paragraph bg">Testimonials</p>
+                <h2 class="heading-primary sm">
+                  People all over the <br />
+                  world use banko.
+                </h2>
+              </div>
 
+              <div class="content-text--aside">
+                <div class="aside-icon">
+                  <img src="/assets/icons/star-icon--bgc.svg" alt="star-icon" />
+                </div>
+
+                <div class="content-text--reviews">
+                  <p class="paragraph md">
+                    Rated <span class="color-tx">4.8/5</span> from over 1000
+                    users
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-ratings">
+              <div class="content-rating--wrapper rating-1">
+                <div class="rating">
+                  <div class="rating-icon">
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                  </div>
+                  <div class="rating-textbox">
+                    <div class="rating-text">
+                      <h4 class="rating-title">
+                        Sunt qui esse pariatur duis deserunt mollit
+                      </h4>
+
+                      <p class="paragraph sm">
+                        Nulla Lorem mollit cupidatat irure. Laborum magna nulla
+                        duis ullamco cillum dolor. Voluptate exercitation
+                        incididunt aliquip deserunt reprehenderit elit laborum.
+                      </p>
+                    </div>
+
+                    <div class="rating-info">
+                      <p class="paragraph md">Cody Fisher</p>
+                      <span class="rating-occupation">Medical Assistant</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="rating">
+                  <div class="rating-icon">
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                  </div>
+                  <div class="rating-textbox">
+                    <div class="rating-text">
+                      <h4 class="rating-title">
+                        Sunt qui esse pariatur duis deserunt mollit
+                      </h4>
+
+                      <p class="paragraph sm">
+                        Aliqua id fugiat nostrud irure ex duis ea quis id quis
+                        ad et. Sunt qui esse pariatur duis deserunt mollit
+                        dolore cillum minim tempor enim. Elit aute irure tempor
+                        cupidatat incididunt sint deserunt ut voluptate aute id
+                        deserunt nisi.
+                      </p>
+                    </div>
+
+                    <div class="rating-info">
+                      <p class="paragraph md">Cody Fisher</p>
+                      <span class="rating-occupation">Medical Assistant</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-rating--wrapper rating-2">
+                <div class="rating">
+                  <div class="rating-icon">
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                  </div>
+                  <div class="rating-textbox">
+                    <div class="rating-text">
+                      <h4 class="rating-title">
+                        At lectus urna duis convallis tellus
+                      </h4>
+
+                      <p class="paragraph sm mb">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Dui accumsan sit amet nulla facilisi
+                        morbi. In nibh mauris cursus mattis. At lectus urna duis
+                        convallis convallis tellus. Enim blandit volutpat
+                        maecenas volutpat.
+                      </p>
+
+                      <p class="paragraph sm">
+                        In nibh mauris cursus mattis. At lectus urna duis
+                        convallis convallis tellus. Enim blandit volutpat
+                        maecenas volutpat.
+                      </p>
+                    </div>
+
+                    <div class="rating-info">
+                      <p class="paragraph md">Jenny Wilson</p>
+                      <span class="rating-occupation">Nursing Assistant</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="rating">
+                  <div class="rating-icon">
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                  </div>
+                  <div class="rating-textbox">
+                    <div class="rating-text">
+                      <h4 class="rating-title">Donec et fringilla neque</h4>
+
+                      <p class="paragraph sm">
+                        Etiam accumsan porta neque in viverra. Proin eleifend,
+                        eros in tristique hendrerit, nisi purus cursus sapien,
+                        id ultrices nunc tellus a ipsum. Donec et fringilla
+                        neque. Aenean consequat purus quis lectus maximus
+                        fermentum.
+                      </p>
+                    </div>
+
+                    <div class="rating-info">
+                      <p class="paragraph md">Darlene Robertson</p>
+                      <span class="rating-occupation">Dog Trainer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-rating--wrapper rating-3">
+                <div class="rating">
+                  <div class="rating-icon">
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                  </div>
+                  <div class="rating-textbox">
+                    <div class="rating-text">
+                      <h4 class="rating-title">
+                        Elit aute irure tempor cupidatat incididunt
+                      </h4>
+
+                      <p class="paragraph sm">
+                        Aliqua id fugiat nostrud irure ex duis ea quis id quis
+                        ad et. Sunt qui esse pariatur duis deserunt mollit
+                        dolore cillum minim tempor enim. Elit aute irure tempor
+                        cupidatat incididunt sint deserunt ut voluptate aute id
+                        deserunt nisi.
+                      </p>
+                    </div>
+
+                    <div class="rating-info">
+                      <p class="paragraph md">Guy Hawkins</p>
+                      <span class="rating-occupation">President of Sales </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rating">
+                  <div class="rating-icon">
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                    <img
+                      src="/assets/icons/green-star.svg
+                    "
+                      alt="green-star" />
+                  </div>
+                  <div class="rating-textbox">
+                    <div class="rating-text">
+                      <h4 class="rating-title">
+                        Etiam accumsan porta neque eros
+                      </h4>
+
+                      <p class="paragraph sm">
+                        Nulla Lorem mollit cupidatat irure. Laborum magna nulla
+                        duis ullamco cillum dolor. Voluptate exercitation
+                        incididunt aliquip deserunt reprehenderit elit laborum.
+                      </p>
+                    </div>
+
+                    <div class="rating-info">
+                      <p class="paragraph md">Dianne Russell</p>
+                      <span class="rating-occupation">Medical Assistant</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_banking center-children--bg">
+        <div class="section_banking-wrapper">
+          <div class="section_banking-content">
+            <div class="content-textbox text-white">
+              <h1 class="heading-secondary">
+                One app.<br />
+                One banking.
+              </h1>
+              <p class="paragraph md">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna.
+              </p>
+            </div>
+
+            <ul class="content-list text-white">
+              <li class="content-item">
+                <img src="/assets/icons/checkmark-green.svg" alt="checkmark" />
+                <p class="paragraph sm">Instant transactions</p>
+              </li>
+              <li class="content-item">
+                <img src="/assets/icons/checkmark-green.svg" alt="checkmark" />
+                <p class="paragraph sm">Payments worldwide</p>
+              </li>
+              <li class="content-item">
+                <img src="/assets/icons/checkmark-green.svg" alt="checkmark" />
+                <p class="paragraph sm">Saving accounts</p>
+              </li>
+              <li class="content-item">
+                <img src="/assets/icons/checkmark-green.svg" alt="checkmark" />
+                <p class="paragraph sm">100% mobile banking</p>
+              </li>
+            </ul>
+
+            <div class="content-btn">
+              <div class="content-banking--btn">
+                <img
+                  src="/assets/icons/apple-store.svg"
+                  alt=" apple-green logo" />
+              </div>
+              <div class="content-banking--btn">
+                <img
+                  src="/assets/icons/Google-store.svg"
+                  alt=" apple-green logo" />
+              </div>
+            </div>
+          </div>
+
+          <div class="banking_image">
+            <img src="/assets/images/app-2.png" alt="header-image" />
+          </div>
+        </div>
+      </section>
+      <section class="section_help center-children--bg">
+        <div class="section_help-wrapper">
+          <div class="section_help-content">
+            <div class="content-info">
+              <h2 class="heading-secondary">Need help?</h2>
+
+              <div class="contact-info">
+                <ul class="contact-info--list">
+                  <li class="contact-list--wrapper">
+                    <figure class="list--icon">
+                      <img src="/assets/icons/call-icon.svg" alt="checkmark" />
+                    </figure>
+
+                    <div class="content-list--text">
+                      <p class="paragraph md">+49 176 123 456</p>
+                      <p class="paragraph rm">Support Hotline</p>
+                    </div>
+                  </li>
+
+                  <li class="contact-list--wrapper">
+                    <figure class="list--icon">
+                      <img src="/assets/icons/mail-icon.svg" alt="checkmark" />
+                    </figure>
+
+                    <div class="content-list--text">
+                      <p class="paragraph md">help@banquee.com</p>
+                      <p class="paragraph rm">Support Email</p>
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="contact-btn">
+                  <a href="#" class="cta color-tx">Supports</a>
+                  <img
+                    src="/assets/icons/arrow-right-green.svg"
+                    alt="arrow-right-green-icon" />
+                </div>
+              </div>
+            </div>
+
+            <ul class="content-list">
+              <li class="content-list--item">
+                <div class="list--text">
+                  <div class="list--wrapper">
+                    <p class="paragraph bg">How do I open an Banko account?</p>
+
+                    <figure class="list--icon">
+                      <img src="/assets/icons/add-fill.svg" alt="checkmark" />
+                    </figure>
+                  </div>
+                </div>
+              </li>
+              <li class="content-list--item">
+                <div class="list--text">
+                  <div class="list--wrapper">
+                    <p class="paragraph bg">How do I order a new card?</p>
+
+                    <figure class="list--icon">
+                      <img src="/assets/icons/add-fill.svg" alt="checkmark" />
+                    </figure>
+                  </div>
+                </div>
+              </li>
+              <li class="content-list--item">
+                <div class="list--text">
+                  <div class="list--wrapper">
+                    <p class="paragraph bg">How to change my account limits?</p>
+
+                    <figure class="list--icon">
+                      <img src="/assets/icons/add-fill.svg" alt="checkmark" />
+                    </figure>
+                  </div>
+                </div>
+              </li>
+              <li class="content-list--item">
+                <div class="list--text">
+                  <div class="list--wrapper">
+                    <p class="paragraph bg">How does Banko premium works?</p>
+
+                    <figure class="list--icon">
+                      <img src="/assets/icons/close-fill.svg" alt="checkmark" />
+                    </figure>
+                  </div>
+
+                  <p class="paragraph sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Dui accumsan sit amet nulla facilisi morbi. Eget
+                    gravida cum sociis natoque penatibus et magnis dis
+                    parturient.
+                  </p>
+                </div>
+              </li>
+              <li class="content-list--item">
+                <div class="list--text">
+                  <div class="list--wrapper">
+                    <p class="paragraph bg">Can I have two Banko accounts?</p>
+
+                    <figure class="list--icon">
+                      <img src="/assets/icons/add-fill.svg" alt="checkmark" />
+                    </figure>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  </body>
 </html>
