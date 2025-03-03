@@ -924,3 +924,74 @@
     }
   }
 }
+
+// SECTION HELP
+
+.section_help {
+  margin: 15rem 0;
+  &-wrapper {
+    .section_help-content {
+      display: flex;
+
+      .content-info {
+        flex: 1;
+
+        .contact-info {
+          .contact-info--list {
+            margin-bottom: 5rem;
+          }
+
+          .contact-list--wrapper {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            margin: 3rem 0;
+
+            .list--icon {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              img {
+                width: 3.5rem;
+                height: 3.5rem;
+                font-size: 3rem;
+                border-radius: 50%;
+                padding: 1rem;
+                box-sizing: content-box;
+                background-color: $primary-light;
+              }
+            }
+          }
+
+          .contact-btn {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+          }
+        }
+      }
+
+      .content-list {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        .content-list--item {
+          .list--text {
+            margin-top: 2rem;
+            .paragraph.sm {
+              width: 70%;
+            }
+
+            .list--wrapper {
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+    }
+  }
+}
