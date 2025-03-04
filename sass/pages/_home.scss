@@ -1086,6 +1086,10 @@
           align-items: center;
           gap: 1.5rem;
 
+          @include phone {
+            justify-content: center;
+          }
+
           .cta {
             background-color: $light-shade;
             padding: 1rem 2rem;
