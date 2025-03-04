@@ -15,14 +15,17 @@ gsap.registerPlugin(
 );
 
 document.querySelectorAll("section").forEach((section) => {
+    section.style.transformOrigin = "top center";
+    section.style.scale = 0.5;
+    section.style.opacity = 0;
   ScrollTrigger.create({
     trigger: section,
-    start: "top 50%",
+    start: "top 70%",
     onEnter: () => {
-      gsap.to(section, { scale: 1, duration: .8 });
+      gsap.to(section, { scale: 1,opacity:1, duration: .8 });
     },
     onLeaveBack: () => {
-      gsap.to(section, { scale: 0.5, duration: .8});
+      gsap.to(section, { scale: 0.5, opacity:0,duration: .8});
     },
   });
 
