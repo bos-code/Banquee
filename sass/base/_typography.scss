@@ -89,6 +89,41 @@ html {
   letter-spacing: -0.03em;
 }
 
+.heading-tertiary.bg {
+  font-size: 4.8rem;
+  @include tab-land {
+    font-size: 3.6rem;
+  }
+
+  @include phone {
+    font-size: 2.4rem;
+  }
+}
+
+.heading-tertiary.md {
+  font-size: 3.4rem;
+
+  @include tab-land {
+    font-size: 2.8rem;
+  }
+
+  @include phone {
+    font-size: 2.2rem;
+  }
+}
+
+.heading-tertiary.sm {
+  font-size: 2.8rem;
+
+  @include tab-land {
+    font-size: 2.6rem;
+  }
+
+  @include phone {
+    font-size: 2rem;
+  }
+}
+
 .paragraph {
   font-family: $secondary-font;
   font-size: 1.8rem;
