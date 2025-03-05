@@ -1059,17 +1059,25 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 3rem;
 
-      @include tab-port {
+      @include tab-land {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      @include medium-phone {
+      @include tab-port {
         grid-template-columns: repeat(1, 1fr);
         gap: 6rem;
+        place-content: center;
       }
 
       .content-blog--box {
         width: 100%;
+
+        @include tab-port {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
 
         .content-blog--text {
           .heading-tertiary {
@@ -1093,7 +1101,7 @@
           .cta {
             background-color: $light-shade;
             padding: 1rem 2rem;
-            border-radius: $border-radius-rm;
+
             color: $default-color;
             font-size: 1.3rem;
           }
@@ -1111,10 +1119,20 @@
           margin-bottom: -3rem;
         }
 
+        @include tab-port {
+          display: flex;
+          justify-content: center;
+        }
+
         img {
           height: 100%;
-          width: 100%;
-          object-fit: contain;
+          width: 35rem;
+          object-fit: cover;
+          border-radius: $border-radius-sm;
+
+          @include tab-land {
+            width: 100%;
+          }
         }
       }
     }
