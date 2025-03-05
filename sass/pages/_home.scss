@@ -988,6 +988,7 @@
             margin-top: 2rem;
             .paragraph.sm {
               width: 70%;
+              padding-bottom: 2rem;
 
               @include medium-phone {
                 width: 100%;
@@ -997,6 +998,11 @@
             .list--wrapper {
               display: flex;
               justify-content: space-between;
+            }
+
+            .list--wrapper.bb {
+              padding-bottom: 2rem;
+              border-bottom: 2px solid $border-color;
             }
           }
         }
@@ -1066,7 +1072,6 @@
       @include tab-port {
         grid-template-columns: repeat(1, 1fr);
         gap: 6rem;
-        place-content: center;
       }
 
       .content-blog--box {
@@ -1101,7 +1106,7 @@
           .cta {
             background-color: $light-shade;
             padding: 1rem 2rem;
-
+            border-radius: $border-radius-rm;
             color: $default-color;
             font-size: 1.3rem;
           }
@@ -1110,9 +1115,8 @@
 
       .content-blog--img {
         width: 100%;
-        height: 25rem;
+        height: 30rem;
         margin-bottom: 2rem;
-        border-radius: $border-radius-sm;
 
         @include bg-desktop {
           height: 100%;
