@@ -137,11 +137,21 @@
 
 // FEATURE HEADER
 .main-header {
-  height: 100vh;
+  margin-bottom: 10rem;
 
   .feature_header {
     padding-top: 10rem;
     background-color: $primary-light;
+
+    @include tab-land {
+      padding: 10rem 4rem 0 4rem;
+    }
+
+    .header_wrapper {
+      @include tab-land {
+        height: 100vh;
+      }
+    }
 
     .header_content {
       display: flex;
@@ -158,6 +168,22 @@
         gap: 2rem;
         margin-bottom: 5rem;
         text-align: center;
+
+        .content-text {
+          .paragraph.bg {
+            font-weight: 400;
+            color: $default-color;
+            line-height: 1.2;
+
+            @include tab-land {
+              font-size: 1.8rem;
+            }
+
+            @include phone {
+              font-size: 1.6rem;
+            }
+          }
+        }
 
         @include phone {
           margin-bottom: 3rem;
@@ -198,6 +224,17 @@
         height: 100%;
         object-fit: contain;
         border-radius: $border-radius-rm;
+
+        @include phone {
+          height: 20rem;
+        }
+      }
+
+      .feature-card {
+        @include phone {
+          height: 20rem;
+          width: 100%;
+        }
       }
     }
   }
