@@ -61,6 +61,12 @@
       gap: 0.8rem;
     }
 
+    .nav_item-wrapper.bg {
+      border-radius: $border-radius-rm;
+      padding: 1rem 2rem;
+      background-color: $light-shade;
+    }
+
     .nav_item {
       font-family: $primary-font;
       font-size: 1.6rem;
