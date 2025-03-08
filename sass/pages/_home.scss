@@ -1014,9 +1014,8 @@
 // SECTION BLOG
 
 .section_blog {
-  margin: 15rem 0;
-
   &-wrapper {
+    margin: 15rem 0;
     @include tab-port {
       display: flex;
       flex-direction: column;
@@ -1115,12 +1114,11 @@
 
       .content-blog--img {
         width: 100%;
-        height: 30rem;
+        // height: 30rem;
         margin-bottom: 2rem;
 
         @include bg-desktop {
-          height: 100%;
-          margin-bottom: -3rem;
+          margin-bottom: 3rem;
         }
 
         @include tab-port {
@@ -1129,8 +1127,6 @@
         }
 
         img {
-          height: 100%;
-          width: 35rem;
           object-fit: cover;
           border-radius: $border-radius-sm;
 
