@@ -1,0 +1,81 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.section_featurecard {
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+
+    @include tab-port {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+
+    .content-textbox--wrapper {
+      flex: 1;
+
+      .textbox {
+        .text {
+          .heading-secondary {
+            @include tab-port {
+              margin-bottom: 1.3rem;
+            }
+          }
+          .paragraph.md {
+            @include tab-port {
+              width: 70%;
+              margin: 0 auto;
+            }
+            @include phone {
+              width: 100%;
+              margin: 0 auto;
+            }
+          }
+        }
+        .content-list {
+          margin: 3rem 0 2.5rem 0;
+
+          @include tab-port {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.4rem;
+          }
+
+          .list--item {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: 1.4rem;
+          }
+        }
+      }
+    }
+
+    .content-image {
+      height: 100%;
+      width: 100%;
+      flex: 1;
+
+      img {
+        height: 70vh;
+        object-fit: contain;
+        width: 100%;
+
+        @include tab-land {
+          height: 60vh;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
