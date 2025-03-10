@@ -1,6 +1,8 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+//  SECTION FEATURECARD
+
 .section_featurecard {
   &-wrapper {
     display: flex;
@@ -78,4 +80,9 @@
       }
     }
   }
+}
+
+// SECTION DETAILS
+
+.section_details {
 }
