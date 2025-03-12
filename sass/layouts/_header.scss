@@ -142,6 +142,7 @@
   .feature_header {
     padding-top: 10rem;
     background-color: $primary-light;
+    overflow: hidden;
 
     .header_content {
       display: flex;
@@ -206,4 +207,12 @@
       }
     }
   }
+}
+
+
+.feature-card-3{
+  transform: translateY(7rem);
+}
+.feature-card-2{
+  transform: translateY(5rem);
 }
