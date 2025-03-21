@@ -1,24 +1,656 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/main.css">
-</head>
-<body>
-    
-    <header id="header" class="header grid">
-        <div class="texkbox">
-          <span id="intro" class="intro">Compare Cards</span>
-          <h1 id="heading-primary" class="heading-primary">The ideal <br> card for you</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banquee. saas | Compare Page</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.png"
+      type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+
+  <body>
+    <main class="frontpage">
+      <main class="main-header">
+        <nav class="navigation center-children--sm">
+          <input type="checkbox" id="checkbox" />
+          <a class="main-nav-link" href="index.html">
+            <h3 class="nav_logo">bankquee.</h3>
+          </a>
+          <ul class="nav_lists">
+            <a class="main-nav-link" href="features.html">
+              <li class="cta nav_item">Features</li>
+            </a>
+            <a class="main-nav-link" href="compare.html">
+              <span class="nav_item-wrapper bg">
+                <li class="cta nav_item">Compare</li>
+                <img src="/assets/icons/down-black.svg" alt="drop-down" />
+              </span>
+            </a>
+            <a class="main-nav-link" href="support.html">
+              <li class="cta nav_item">Support</li>
+            </a>
+            <a class="main-nav-link" href="blog.html">
+              <span class="nav_item-wrapper">
+                <li class="cta nav_item">Blog</li>
+                <img src="/assets/icons/down-black.svg" alt="drop-down" />
+              </span>
+            </a>
+
+            <div class="nav_actions pb">
+              <a href="#" class="cta color-tx"> Login</a
+              ><a href="#" class="btn-2">Open Account</a>
+            </div>
+          </ul>
+
+          <label class="nav_toggle" for="checkbox">
+            <span class="open"><ion-icon name="menu"></ion-icon></span>
+            <span class="close"><ion-icon name="close"></ion-icon></span
+          ></label>
+
+          <div class="nav_actions dk">
+            <a href="#" class="cta color-tx"> Login</a
+            ><a href="#" class="btn-2">Open Account</a>
+          </div>
+        </nav>
+
+        <header class="compare_header center-children--bg">
+          <div class="header_wrapper">
+            <div class="header_content">
+              <div class="content-textbox">
+                <div class="content-text">
+                  <p class="paragraph bg">Compare Cards</p>
+
+                  <h1 class="heading-primary sm">
+                    The ideal <br />card for you
+                  </h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="header_gallery">
+              <img
+                src="/assets/images/card-gold.png"
+                alt="compare-card--1"
+                class="compare-card to-right" />
+              <img
+                src="/assets/images/card-black.png"
+                alt="compare-card--2"
+                class="compare-card compare-card-1" />
+              <img
+                src="/assets/images/card-green.png"
+                alt="compare-card--3"
+                class="compare-card to-left" />
+            </div>
+          </div>
+        </header>
+      </main>
+
+      <section class="pricing center-children--bg">
+        <div class="pricing_wrapper">
+          <div class="row-1">
+            <div class="row-heading">
+              <p class="paragraph bg">Credit card</p>
+            </div>
+            <div class="row-wrapper">
+              <div class="row">
+                <div class="column">
+                  <div class="column-icon">
+                    <img
+                      src="./assets/icons/bank-card--line.svg"
+                      alt="bank-card--line" />
+
+                    <div class="column-text">
+                      <p class="paragraph md">Physical Card</p>
+                      <p class="paragraph rm">Diam in arcu cursus euismod</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="column-text">
+                    <p class="paragraph sm">Optional</p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="icon">
+                    <img
+                      src="./assets/icons/checkmark-green.svg"
+                      alt="checkmark-green" />
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="icon">
+                    <img
+                      src="./assets/icons/checkmark-green.svg"
+                      alt="checkmark-green" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <div class="column-icon">
+                    <img
+                      src="./assets/icons/refund-line.svg"
+                      alt="bank-card--line" />
+
+                    <div class="column-text">
+                      <p class="paragraph md">Virtual Card</p>
+                      <p class="paragraph rm">Diam in arcu cursus euismod</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="column-text">
+                    <p class="paragraph sm">-</p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="column-text">
+                    <p class="paragraph sm">Up to 2</p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="column-text">
+                    <p class="paragraph sm">Unlimited</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <div class="column-icon">
+                    <img
+                      src="./assets/icons/wifi-line.svg"
+                      alt="bank-card--line" />
+
+                    <div class="column-text">
+                      <p class="paragraph md">Contactless Payments</p>
+                      <p class="paragraph rm">Diam in arcu cursus euismod</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="icon">
+                    <img
+                      src="./assets/icons/checkmark-green.svg"
+                      alt="checkmark-green" />
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="icon">
+                    <img
+                      src="./assets/icons/checkmark-green.svg"
+                      alt="checkmark-green" />
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="icon">
+                    <img
+                      src="./assets/icons/checkmark-green.svg"
+                      alt="checkmark-green" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <div class="column-icon">
+                    <img
+                      src="./assets/icons/money-euro-circle-line.svg"
+                      alt="bank-card--line" />
+
+                    <div class="column-text">
+                      <p class="paragraph md">Mobile Payments</p>
+                      <p class="paragraph rm">Diam in arcu cursus euismod</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="icon">
+                    <img
+                      src="./assets/icons/checkmark-green.svg"
+                      alt="checkmark-green" />
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="icon">
+                    <img
+                      src="./assets/icons/checkmark-green.svg"
+                      alt="checkmark-green" />
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="icon">
+                    <img
+                      src="./assets/icons/checkmark-green.svg"
+                      alt="checkmark-green" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row-1">
+            <div class="row-heading">
+              <p class="paragraph bg">Bank Account</p>
+            </div>
+            <div class="row-wrapper">
+              <div class="row">
+                <div class="column">
+                  <div class="column-icon">
+                    <img
+                      src="./assets/icons/global-line.svg"
+                      alt="bank-card--line" />
+
+                    <div class="column-text">
+                      <p class="paragraph md">Free Payments Globally</p>
+                      <p class="paragraph rm">Diam in arcu cursus euismod</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="column-text">
+                    <p class="paragraph sm">2</p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="icon">
+                    <img
+                      src="./assets/icons/checkmark-green.svg"
+                      alt="checkmark-green" />
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="icon">
+                    <img
+                      src="./assets/icons/checkmark-green.svg"
+                      alt="checkmark-green" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <div class="column-icon">
+                    <img
+                      src="./assets/icons/bank-line.svg"
+                      alt="bank-card--line" />
+
+                    <div class="column-text">
+                      <p class="paragraph md">Free ATM withdrawls</p>
+                      <p class="paragraph rm">Diam in arcu cursus euismod</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="column-text">
+                    <p class="paragraph sm">2</p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="column-text">
+                    <p class="paragraph sm">5</p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="column-text">
+                    <p class="paragraph sm">10</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <div class="column-icon">
+                    <img
+                      src="./assets/icons/smartphone-line.svg"
+                      alt="bank-card--line" />
+
+                    <div class="column-text">
+                      <p class="paragraph md">Mobile Banking</p>
+                      <p class="paragraph rm">Diam in arcu cursus euismod</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="icon">
+                    <img
+                      src="./assets/icons/checkmark-green.svg"
+                      alt="checkmark-green" />
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="icon">
+                    <img
+                      src="./assets/icons/checkmark-green.svg"
+                      alt="checkmark-green" />
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="icon">
+                    <img
+                      src="./assets/icons/checkmark-green.svg"
+                      alt="checkmark-green" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row-1">
+            <div class="row-heading">
+              <p class="paragraph bg">Extra Features</p>
+            </div>
+            <div class="row-wrapper">
+              <div class="row">
+                <div class="column">
+                  <div class="column-icon">
+                    <img
+                      src="./assets/icons/safe-2-fill.svg"
+                      alt="bank-card--line" />
+
+                    <div class="column-text">
+                      <p class="paragraph md">Saving Accounts</p>
+                      <p class="paragraph rm">Diam in arcu cursus euismod</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="column-text">
+                    <p class="paragraph sm">2</p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="column-text">
+                    <p class="paragraph sm">5</p>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="column-text">
+                    <p class="paragraph sm">Unlimited</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <div class="column-icon">
+                    <img
+                      src="./assets/icons/line-chart-line.svg"
+                      alt="bank-card--line" />
+
+                    <div class="column-text">
+                      <p class="paragraph md">Advanced Statistics</p>
+                      <p class="paragraph rm">Diam in arcu cursus euismod</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="icon">
+                    <img
+                      src="./assets/icons/checkmark-green.svg"
+                      alt="checkmark-green" />
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="icon">
+                    <img
+                      src="./assets/icons/checkmark-green.svg"
+                      alt="checkmark-green" />
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="icon">
+                    <img
+                      src="./assets/icons/checkmark-green.svg"
+                      alt="checkmark-green" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <div class="column-icon">
+                    <img
+                      src="./assets/icons/copper-diamond-line.svg"
+                      alt="bank-card--line" />
+
+                    <div class="column-text">
+                      <p class="paragraph md">Premium Parnter Offers</p>
+                      <p class="paragraph rm">Diam in arcu cursus euismod</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="icon">
+                    <img
+                      src="./assets/icons/checkmark-green.svg"
+                      alt="checkmark-green" />
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="icon">
+                    <img
+                      src="./assets/icons/checkmark-green.svg"
+                      alt="checkmark-green" />
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="icon">
+                    <img
+                      src="./assets/icons/checkmark-green.svg"
+                      alt="checkmark-green" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <figure class="imagebox" id="imagebox">
-          <img class="rotate rotate-right" src="/assests/img/card-gold.png" alt="cards" />
-          <img  class="rotate top" src="/assests/img/card-black.png" alt="cards" />
-          <img class="rotate rotate-left" src="/assests/img/card-green.png" alt="cards" />
-        
-        </figure>
-      </header>
-</body>
+      </section>
+
+      <section class="section_account center-children--bg">
+        <div class="section_account-wrapper">
+          <div class="section_account-content">
+            <div class="content-textbox">
+              <p class="paragraph bg">Accounts</p>
+              <h2 class="heading-secondary">Choose your card.</h2>
+              <p class="paragraph bg">
+                Senectus et netus et malesuada fames ac turpis. Sagittis vitae
+                et leo duis ut diam.
+              </p>
+            </div>
+
+            <div class="content_cards">
+              <div class="card">
+                <div class="card-text">
+                  <div class="card-plan">
+                    <p class="paragraph bg">Basic</p>
+                    <a href="#" class="color-tx--rm"> Popular </a>
+                  </div>
+
+                  <div class="heading-tertiary bg">Free</div>
+
+                  <p class="paragraph sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+
+                <figure class="card-img">
+                  <img src="/assets/images/card-green.png" alt="card-green" />
+                </figure>
+
+                <button class="card-btn cta">Get started</button>
+              </div>
+              <div class="card">
+                <div class="card-text">
+                  <div class="card-plan">
+                    <p class="paragraph bg">Premium</p>
+                  </div>
+
+                  <div class="card-wrapper">
+                    <h3 class="heading-tertiary bg">$5</h3>
+                    <p class="paragraph sm">per month</p>
+                  </div>
+
+                  <p class="paragraph sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+
+                <figure class="card-img">
+                  <img src="/assets/images/card-black.png" alt="card-green" />
+                </figure>
+
+                <button class="card-btn cta">Get started</button>
+              </div>
+              <div class="card">
+                <div class="card-text">
+                  <div class="card-plan">
+                    <p class="paragraph bg">Gold</p>
+                  </div>
+
+                  <div class="card-wrapper">
+                    <h3 class="heading-tertiary bg">$10</h3>
+                    <p class="paragraph sm">per month</p>
+                  </div>
+
+                  <p class="paragraph sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+
+                <figure class="card-img">
+                  <img src="/assets/images/card-gold.png" alt="card-green" />
+                </figure>
+
+                <button class="card-btn cta">Get started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_banking center-children--bg">
+        <div class="section_banking-wrapper">
+          <div class="section_banking-content">
+            <div class="content-textbox text-white">
+              <h1 class="heading-secondary">
+                One app.<br />
+                One banking.
+              </h1>
+              <p class="paragraph md">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna.
+              </p>
+            </div>
+
+            <ul class="content-list text-white">
+              <li class="content-item">
+                <img src="/assets/icons/checkmark-green.svg" alt="checkmark" />
+                <p class="paragraph sm">Instant transactions</p>
+              </li>
+              <li class="content-item">
+                <img src="/assets/icons/checkmark-green.svg" alt="checkmark" />
+                <p class="paragraph sm">Payments worldwide</p>
+              </li>
+              <li class="content-item">
+                <img src="/assets/icons/checkmark-green.svg" alt="checkmark" />
+                <p class="paragraph sm">Saving accounts</p>
+              </li>
+              <li class="content-item">
+                <img src="/assets/icons/checkmark-green.svg" alt="checkmark" />
+                <p class="paragraph sm">100% mobile banking</p>
+              </li>
+            </ul>
+
+            <div class="content-btn">
+              <div class="content-banking--btn">
+                <img
+                  src="/assets/icons/apple-store.svg"
+                  alt=" apple-green logo" />
+              </div>
+              <div class="content-banking--btn">
+                <img
+                  src="/assets/icons/Google-store.svg"
+                  alt=" apple-green logo" />
+              </div>
+            </div>
+          </div>
+
+          <div class="banking_image">
+            <img src="/assets/images/app-2.png" alt="header-image" />
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer center-children--bg">
+        <div class="footer_container">
+          <div class="footer_list--logo">
+            <h3 class="heading-tertiary md color-tx">banquee.</h3>
+          </div>
+          <div class="footer_lists">
+            <div class="footer_list">
+              <h4 class="list-heading">About</h4>
+              <ul class="list">
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>Support</li>
+              </ul>
+            </div>
+            <div class="footer_list">
+              <h4 class="list-heading">Blog</h4>
+              <ul class="list">
+                <li>Products</li>
+                <li>Technology</li>
+                <li>Crypto</li>
+              </ul>
+            </div>
+            <div class="footer_list">
+              <h4 class="list-heading">Webflow</h4>
+              <ul class="list">
+                <li>Styleguide</li>
+                <li>Licensing</li>
+                <li>Changelog</li>
+              </ul>
+            </div>
+            <div class="footer_list">
+              <h4 class="list-heading">Social Media</h4>
+              <ul class="list">
+                <li>Twitter</li>
+                <li>Facebook</li>
+                <li>Instagram</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="foot_container">
+            <div class="foot_text">
+              <p class="paragraph rm">
+                &COPY; Made by <span class="color-tx--sm">Pawel Gola</span> -
+                Powered by
+                <span class="color-tx--sm">Webflow</span>
+              </p>
+            </div>
+
+            <ul class="foot_list">
+              <li>Impressum</li>
+              <li>Datenschutz</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  </body>
 </html>
