@@ -1,0 +1,181 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+// INFO SECTION
+
+.info {
+  .info_wrapper {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $accent-color;
+    border-radius: $border-radius-rm;
+    gap: 4rem;
+    padding: 4rem;
+
+    @include tab-land {
+      gap: 1rem;
+    }
+
+    @include tab-port {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      place-items: center;
+      gap: 2rem;
+    }
+
+    @include medium-phone {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      place-items: center;
+      gap: 2rem;
+    }
+
+    .info-heading {
+      @include medium-phone {
+        text-align: center;
+      }
+    }
+
+    .info-text {
+      color: #fff;
+    }
+
+    .info-number {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      img {
+        padding: 1rem;
+
+        border-radius: 50%;
+        width: 5rem;
+      }
+    }
+
+    .info-email {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      img {
+        padding: 1rem;
+
+        border-radius: 50%;
+        width: 5rem;
+      }
+    }
+
+    .info-btn {
+      background-color: #000;
+      padding: 1.5rem;
+      border-radius: $border-radius-rm;
+      font-size: 1.8rem;
+
+      @include tab-port {
+        width: fit-content;
+      }
+
+      @include medium-phone {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+// SUPPORT CENTER
+
+.support_center {
+  margin: 15rem 0 20rem 0;
+
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 8.6rem;
+
+    @include tab-port {
+      flex-direction: column;
+    }
+
+    .option {
+      flex: 0.6;
+      padding: 2rem;
+      background-color: $light-shade;
+      border-radius: $border-radius-rm;
+      height: max-content;
+      width: 50%;
+
+      .option-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+        margin-top: 1rem;
+
+        .option-list--text {
+          font-size: 1.6rem;
+          color: $light-grey;
+
+          img {
+            width: 5rem;
+          }
+        }
+      }
+    }
+
+    .list {
+      flex: 1.4;
+      display: flex;
+      flex-direction: column;
+      gap: 8rem;
+
+      .paragraph.sm {
+        width: 60%;
+
+        @include tab-land {
+          width: 70%;
+        }
+
+        @include tab-port {
+          margin-top: 1rem;
+        }
+
+        @include phone {
+          width: 90%;
+        }
+      }
+
+      .content-list--wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        width: 100%;
+
+        .list-head {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+
+        .content-list {
+          display: flex;
+          flex-direction: column;
+          gap: 2.5rem;
+        }
+
+        .content-list--item {
+          display: flex;
+          align-items: center;
+
+          .list--wrapper {
+            display: flex;
+            justify-content: space-between;
+
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

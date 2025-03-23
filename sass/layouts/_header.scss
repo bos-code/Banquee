@@ -224,7 +224,7 @@
   }
 }
 
-// COMPARE PAGE
+// COMPARE HEADER
 
 .main-header {
   height: 100%;
@@ -298,6 +298,113 @@
           transform: translate(45%, 40px) rotate(80deg);
         }
       }
+    }
+  }
+}
+
+// SUPPORT HEADER
+
+.main-header {
+  height: 100%;
+  .support_header {
+    display: flex;
+    height: 60vh;
+    padding-top: 10rem;
+    overflow: hidden;
+    background-color: $primary-light;
+    justify-content: center;
+
+    @include tab-port {
+      height: 90vh;
+    }
+
+    .header_wrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: 10rem;
+      width: 100%;
+      margin-top: 5rem;
+
+      @include tab-port {
+        flex-direction: column;
+      }
+
+      @include phone {
+        margin-top: 0;
+        gap: 4rem;
+      }
+
+      .header_content {
+        flex: 1;
+
+        .content-textbox {
+          .paragraph.bg {
+            @include tab-port {
+              margin-bottom: 2rem;
+            }
+          }
+          @include tab-port {
+            text-align: center;
+          }
+          @include phone {
+            margin-bottom: 3rem;
+          }
+        }
+      }
+
+      .header_gallery {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        width: 100%;
+
+        img {
+          object-fit: contain;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// BLOG HEADER
+
+.blog {
+  margin-top: 8rem;
+
+  @include phone {
+    margin-top: 4rem;
+  }
+
+  .blog_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16rem;
+    width: 100%;
+
+    @include tab-land {
+      gap: 12rem;
+    }
+
+    @include tab-port {
+      display: flex;
+      flex-direction: column;
+
+      gap: 5rem;
+    }
+  }
+
+  .blog_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include phone {
+      text-align: center;
     }
   }
 }

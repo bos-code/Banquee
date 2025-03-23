@@ -43,17 +43,6 @@
         width: 100%;
       }
     }
-
-    .app-image--card-app {
-      top: 10rem;
-      left: 7rem;
-      z-index: 15;
-      width: 35rem;
-
-      @include tab-land {
-        display: none;
-      }
-    }
   }
 
   .app-content--wrapper {
@@ -748,6 +737,7 @@
               .rating-info {
                 .rating-occupation {
                   font-size: 1.4rem;
+                  color: $light-grey;
 
                   @include phone {
                     font-size: 1.2rem;
@@ -844,6 +834,17 @@
 
           @include bg-desktop {
             margin-bottom: 2rem;
+          }
+        }
+
+        .paragraph.md {
+          width: 70%;
+          padding-bottom: 2rem;
+        }
+
+        @include bg-desktop {
+          .paragraph.md {
+            padding-bottom: 3rem;
           }
         }
 
@@ -1127,6 +1128,7 @@
         }
 
         img {
+          width: 100%;
           object-fit: cover;
           border-radius: $border-radius-sm;
 

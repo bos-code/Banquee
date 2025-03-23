@@ -182,6 +182,108 @@
   }
 }
 
+//  SECTION ACCOUNT
+
+.section_account {
+  margin: 20rem 0;
+  &-wrapper {
+    .section_account-content {
+      .content-textbox {
+        text-align: center;
+
+        .heading-secondary {
+          margin-bottom: 1.5rem;
+        }
+
+        .paragraph.bg {
+          width: 70%;
+          margin: 0 auto;
+
+          @include phone {
+            width: 90%;
+            margin: 0 auto;
+          }
+        }
+      }
+
+      .content_cards {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        gap: 3.2rem;
+        margin: 10rem 0;
+
+        @include tab-port {
+          flex-direction: column;
+          align-items: center;
+          gap: 10rem;
+        }
+
+        .card {
+          display: flex;
+          flex-direction: column;
+          gap: 2.5rem;
+          text-align: center;
+
+          .card-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .card-plan {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 0.8rem;
+              padding-bottom: 4rem;
+            }
+
+            .card-wrapper {
+              display: flex;
+              align-items: end;
+              justify-content: center;
+              gap: 1rem;
+              width: 20rem;
+              margin: 0 auto;
+            }
+
+            .paragraph.sm {
+              width: 90%;
+              margin: 0 auto;
+              margin-top: 1.5rem;
+
+              @include phone {
+                width: 90%;
+              }
+            }
+          }
+
+          .card-img {
+            width: 100%;
+
+            height: 25rem;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .card-btn {
+            border: none;
+            width: 100%;
+            font-size: 1.5rem;
+            color: $default-background-color;
+            background-color: $accent-color;
+            padding: 1.5rem;
+            border-radius: $border-radius-rm;
+          }
+        }
+      }
+    }
+  }
+}
+
 // INFO SECTION
 
 .info {

@@ -94,6 +94,10 @@
       .paragraph.bg {
         margin: 0 auto;
         width: 70%;
+
+        @include phone {
+          width: 100%;
+        }
       }
     }
 
@@ -102,6 +106,12 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 3.2rem;
       margin: 5rem 0;
+
+      @include tab-port {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10rem;
+      }
 
       .box-bg {
         display: flex;
@@ -117,6 +127,11 @@
           .paragraph.md {
             width: 70%;
             margin: 0 auto;
+            color: $light-grey;
+
+            @include phone {
+              width: 80%;
+            }
           }
         }
 
@@ -127,6 +142,10 @@
 
           height: 20rem;
           width: 100%;
+
+          @include phone {
+            gap: 1rem;
+          }
 
           img {
             height: 100%;
@@ -145,6 +164,243 @@
             object-fit: contain;
             height: 100%;
             width: 100%;
+          }
+        }
+      }
+    }
+
+    .content-box--2 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3.2rem;
+
+      @include tab-port {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10rem;
+      }
+
+      .box-sm {
+        background-color: $light-shade;
+        border-radius: $border-radius-sm;
+        height: 70vh;
+
+        .box-text {
+          text-align: center;
+          padding-top: 3rem;
+
+          .paragraph.md {
+            width: 70%;
+            margin: 0 auto;
+
+            color: $light-grey;
+
+            @include phone {
+              width: 80%;
+            }
+          }
+        }
+
+        .box-logos {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 2rem;
+          width: 100%;
+          padding: 3rem 2rem;
+
+          @include tab-port {
+            padding: 10rem 2rem;
+          }
+
+          img {
+            width: 100%;
+            height: 6rem;
+            padding: 1.5rem;
+            border-radius: $border-radius-sm;
+            background-color: $default-background-color;
+          }
+        }
+
+        .box-gallery--wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+
+          width: 100%;
+
+          .box-gallery {
+            width: 20rem;
+            margin-top: 3rem;
+
+            .box-text {
+              @include tab-port {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              }
+            }
+
+            .box-img {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              height: 20rem;
+              border-radius: $border-radius-sm;
+              margin-bottom: 2rem;
+            }
+
+            .box-1 {
+              background-color: #e8f2ee;
+            }
+
+            .box-2 {
+              background-color: #f1dfdf;
+            }
+
+            .box-3 {
+              background-color: #dfe1f1;
+            }
+
+            .box-4 {
+              background-color: #dfebf1;
+            }
+
+            .box-5 {
+              background-color: $default-background-color;
+            }
+          }
+        }
+
+        .box-dashboard--wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+          margin: 4rem 2rem;
+          overflow-y: scroll;
+          height: 50vh;
+
+          .box-dashboard {
+            width: 100%;
+
+            .box_info {
+              display: flex;
+              align-items: center;
+
+              background-color: $default-background-color;
+              border-radius: $border-radius-rm;
+              padding: 1.5rem;
+
+              .box_info--name {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin-right: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//  SECTION ACCOUNT
+
+.section_account-feature {
+  margin: 20rem 0;
+  &-wrapper {
+    .section_account-content {
+      .content-textbox {
+        text-align: center;
+
+        .heading-secondary {
+          margin-bottom: 1.5rem;
+        }
+
+        .paragraph.bg {
+          width: 70%;
+          margin: 0 auto;
+
+          @include phone {
+            width: 90%;
+            margin: 0 auto;
+          }
+        }
+      }
+
+      .content_cards {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        gap: 3.2rem;
+        margin: 10rem 0;
+
+        @include tab-port {
+          flex-direction: column;
+          align-items: center;
+          gap: 10rem;
+        }
+
+        .card {
+          display: flex;
+          flex-direction: column;
+          gap: 2.5rem;
+          text-align: center;
+
+          .card-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .card-plan {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 0.8rem;
+              padding-bottom: 4rem;
+            }
+
+            .card-wrapper {
+              display: flex;
+              align-items: end;
+              justify-content: center;
+              gap: 1rem;
+              width: 20rem;
+              margin: 0 auto;
+            }
+
+            .paragraph.sm {
+              width: 90%;
+              margin: 0 auto;
+              margin-top: 1.5rem;
+
+              @include phone {
+                width: 90%;
+              }
+            }
+          }
+
+          .card-img {
+            width: 100%;
+
+            height: 25rem;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .card-btn {
+            border: none;
+            width: 100%;
+            font-size: 1.5rem;
+            color: $default-background-color;
+            background-color: $accent-color;
+            padding: 1.5rem;
+            border-radius: $border-radius-rm;
           }
         }
       }

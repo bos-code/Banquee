@@ -1,0 +1,32 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+// SECTION BLOG
+
+.section_blog {
+  &-wrapper {
+  }
+
+  &-content {
+    .normal {
+      display: flex;
+      align-items: center;
+      justify-content: normal;
+      gap: 2rem;
+
+      .blog-head--btn {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .cta {
+          background-color: #f8f8f8;
+          padding: 1rem 2rem;
+          border-radius: 7px;
+          color: #1a191e;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}

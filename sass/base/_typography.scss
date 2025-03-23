@@ -146,7 +146,14 @@ html {
 
   @include tab-land {
     font-size: 1.6rem;
+    margin-top: 2rem;
   }
+
+  @include tab-port {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+
   @include phone {
     font-size: 1.4rem;
   }
