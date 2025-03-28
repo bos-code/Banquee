@@ -1,5 +1,6 @@
 @use "../abstracts/mixins" as *;
 @use "../abstracts/variables" as *;
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -82,17 +83,18 @@
   }
 
   @include tab-port {
-    #checkbox:checked ~ .nav_lists {
+    #checkbox:checked~.nav_lists {
       transform: translateX(0);
     }
   }
 
   @include phone {
-    #checkbox:checked ~ .nav_toggle span.open {
+    #checkbox:checked+.nav_toggle span.open {
       display: none;
     }
-    #checkbox:checked ~ .nav_toggle span.close {
-      display: flex;
+
+    #checkbox:checked+.nav_toggle span.close {
+      display: block;
     }
   }
 

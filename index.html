@@ -61,8 +61,69 @@
           </ul>
 
           <label class="nav_toggle" for="checkbox">
-            <span class="open"><ion-icon name="menu"></ion-icon></span>
-            <span class="close"><ion-icon name="close"></ion-icon></span
+            <span class="open">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="5"
+                  y1="8"
+                  x2="25"
+                  y2="8"
+                  stroke="black"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="5"
+                  y1="15"
+                  x2="25"
+                  y2="15"
+                  stroke="black"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="5"
+                  y1="22"
+                  x2="25"
+                  y2="22"
+                  stroke="black"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+            <span class="close">
+              <svg
+                width="30"
+                fill="#33aabb"
+                height="30"
+                viewBox="0 0 30 30"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="5"
+                  y1="5"
+                  x2="25"
+                  y2="25"
+                  stroke="black"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="5"
+                  y1="25"
+                  x2="25"
+                  y2="5"
+                  stroke="black"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </svg> </span
           ></label>
 
           <div class="nav_actions dk">
@@ -134,7 +195,7 @@
         </header>
       </div>
 
-      <section class="section_app center-children--bg ">
+      <section class="section_app center-children--bg">
         <div class="section_app-wrapper">
           <div class="section_app-content">
             <h2 class="heading-primary sm">
@@ -214,7 +275,7 @@
         </div>
       </section>
 
-      <section class="section_send special"  >
+      <section class="section_send special">
         <div class="section_send-wrapper center-children--bg">
           <div class="section_send-content">
             <h2 class="heading-secondary">
@@ -453,7 +514,7 @@
         </div>
       </section>
 
-      <section class="section_notified center-children--bg ">
+      <section class="section_notified center-children--bg">
         <div class="section_notified-wrapper">
           <div class="section_notified-content">
             <p class="paragraph bg">Notifications</p>
@@ -1198,7 +1259,8 @@
                 <a href="#" class="cta color-tx">All Articles</a>
                 <img
                   src="/assets/icons/arrow-right-green.svg"
-                  alt="arrow-right-green-icon" />
+                  alt="arrow-right-green-icon"
+                />
               </div>
             </div>
 
@@ -1330,6 +1392,14 @@
         </div>
       </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EaselPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+    <script type="module" src="./js/animation.js"></script>
   </body>
 </html>
